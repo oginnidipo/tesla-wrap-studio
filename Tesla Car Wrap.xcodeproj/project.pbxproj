@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11E2612EB852004F72070193 /* ExportPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCABC592FE7FBDD8743490D /* ExportPanel.swift */; };
+		15001A17A644AEC156A764FB /* m3-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBAD4D291EF5F84916E8B86 /* m3-overlay.png */; };
+		24D96BE1BB35A14710F8A4C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CF8030D549D6EE24C6E9C /* ContentView.swift */; };
+		2E21D83DED123177A3808D35 /* ct-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DB981D1B0335C5CED186C4 /* ct-mask.png */; };
+		4E09BBDC283A85BDBA29B98C /* ct-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */; };
+		608051887C51DF0F627548AE /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0C550C1BD942AE20A5137 /* CanvasView.swift */; };
+		6AD327124AD9BB1B4545AF04 /* Stickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF70F891B1D354D930A355A /* Stickers.swift */; };
+		784710BF9EC75EE1B7EE2EBC /* ct-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 81011632EF1936FE4556AFA8 /* ct-car.png */; };
+		86B54DFD3C1535DB40B3C7DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816DEE7E91B1805AE9BAE26C /* Assets.xcassets */; };
+		87FA2C27B2401A12EA0015E8 /* WrapStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */; };
+		896AAF6F30BD82D5368BCFAE /* m3-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */; };
+		9ECF0A4D5BE33638EA6F52F8 /* m3-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1D885D454FDE1E76DEEEF7 /* m3-template.png */; };
+		B46651602E8BBF12B7F95CDA /* my-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C674D9277D085B2784D5B1C /* my-template.png */; };
+		BD01A911CBD0988F838AFBDB /* m3-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 911791F519CB9F2D0E806991 /* m3-car.png */; };
+		DA6F602BF706CB53C5D7A739 /* my-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AEE2E6736F4B2129F375724 /* my-car.png */; };
+		DE45EF766FE9DDC610340485 /* ct-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC2ADBF3FCB70E9E0AEF6CD /* ct-template.png */; };
+		F0D9EEB2390D993BDDAD2389 /* my-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8BC3FCF8DE86FC07F15FDA /* my-overlay.png */; };
+		F40AAD81422AC180BC41D347 /* my-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = A75E3B443EF6AAC83ECC191B /* my-mask.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BCABC592FE7FBDD8743490D /* ExportPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPanel.swift; sourceTree = "<group>"; };
+		1CBAD4D291EF5F84916E8B86 /* m3-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-overlay.png"; sourceTree = "<group>"; };
+		1F1D885D454FDE1E76DEEEF7 /* m3-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-template.png"; sourceTree = "<group>"; };
+		3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapStudioApp.swift; sourceTree = "<group>"; };
+		4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-mask.png"; sourceTree = "<group>"; };
+		4AEE2E6736F4B2129F375724 /* my-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-car.png"; sourceTree = "<group>"; };
+		4F8BC3FCF8DE86FC07F15FDA /* my-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-overlay.png"; sourceTree = "<group>"; };
+		5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-overlay.png"; sourceTree = "<group>"; };
+		6EF70F891B1D354D930A355A /* Stickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stickers.swift; sourceTree = "<group>"; };
+		74F0C550C1BD942AE20A5137 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		7A012488B9CE166598AF67C9 /* Tesla Car Wrap.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Tesla Car Wrap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC2ADBF3FCB70E9E0AEF6CD /* ct-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-template.png"; sourceTree = "<group>"; };
+		81011632EF1936FE4556AFA8 /* ct-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-car.png"; sourceTree = "<group>"; };
+		816DEE7E91B1805AE9BAE26C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84DB981D1B0335C5CED186C4 /* ct-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-mask.png"; sourceTree = "<group>"; };
+		8C674D9277D085B2784D5B1C /* my-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-template.png"; sourceTree = "<group>"; };
+		911791F519CB9F2D0E806991 /* m3-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-car.png"; sourceTree = "<group>"; };
+		A75E3B443EF6AAC83ECC191B /* my-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-mask.png"; sourceTree = "<group>"; };
+		BE8CF8030D549D6EE24C6E9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		077E79E239E679DB9A1A26D8 /* WrapStudio */ = {
+			isa = PBXGroup;
+			children = (
+				816DEE7E91B1805AE9BAE26C /* Assets.xcassets */,
+				74F0C550C1BD942AE20A5137 /* CanvasView.swift */,
+				BE8CF8030D549D6EE24C6E9C /* ContentView.swift */,
+				1BCABC592FE7FBDD8743490D /* ExportPanel.swift */,
+				6EF70F891B1D354D930A355A /* Stickers.swift */,
+				3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */,
+				BDEFB50B4436784751823DC1 /* Assets */,
+			);
+			path = WrapStudio;
+			sourceTree = "<group>";
+		};
+		5442AABB13D6CCD70BFAC36F = {
+			isa = PBXGroup;
+			children = (
+				077E79E239E679DB9A1A26D8 /* WrapStudio */,
+				8A7B65213A43A4EB3CF3E296 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A7B65213A43A4EB3CF3E296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A012488B9CE166598AF67C9 /* Tesla Car Wrap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDEFB50B4436784751823DC1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				81011632EF1936FE4556AFA8 /* ct-car.png */,
+				84DB981D1B0335C5CED186C4 /* ct-mask.png */,
+				5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */,
+				7CC2ADBF3FCB70E9E0AEF6CD /* ct-template.png */,
+				911791F519CB9F2D0E806991 /* m3-car.png */,
+				4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */,
+				1CBAD4D291EF5F84916E8B86 /* m3-overlay.png */,
+				1F1D885D454FDE1E76DEEEF7 /* m3-template.png */,
+				4AEE2E6736F4B2129F375724 /* my-car.png */,
+				A75E3B443EF6AAC83ECC191B /* my-mask.png */,
+				4F8BC3FCF8DE86FC07F15FDA /* my-overlay.png */,
+				8C674D9277D085B2784D5B1C /* my-template.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		544C6CDCCCE045AE7BB542E6 /* Tesla Car Wrap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1CD3D69EAD75BBE2FE6845E /* Build configuration list for PBXNativeTarget "Tesla Car Wrap" */;
+			buildPhases = (
+				0581C7C57581B11AA3F13DBE /* Sources */,
+				78C55A4F07B71F4035FF2585 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tesla Car Wrap";
+			packageProductDependencies = (
+			);
+			productName = "Tesla Car Wrap";
+			productReference = 7A012488B9CE166598AF67C9 /* Tesla Car Wrap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F74E09BF9C7A12612DD0CCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					544C6CDCCCE045AE7BB542E6 = {
+						DevelopmentTeam = 8UR98GGM8L;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F1477A71F986ECD93F3686E4 /* Build configuration list for PBXProject "Tesla Car Wrap" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5442AABB13D6CCD70BFAC36F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8A7B65213A43A4EB3CF3E296 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				544C6CDCCCE045AE7BB542E6 /* Tesla Car Wrap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78C55A4F07B71F4035FF2585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B54DFD3C1535DB40B3C7DA /* Assets.xcassets in Resources */,
+				784710BF9EC75EE1B7EE2EBC /* ct-car.png in Resources */,
+				2E21D83DED123177A3808D35 /* ct-mask.png in Resources */,
+				4E09BBDC283A85BDBA29B98C /* ct-overlay.png in Resources */,
+				DE45EF766FE9DDC610340485 /* ct-template.png in Resources */,
+				BD01A911CBD0988F838AFBDB /* m3-car.png in Resources */,
+				896AAF6F30BD82D5368BCFAE /* m3-mask.png in Resources */,
+				15001A17A644AEC156A764FB /* m3-overlay.png in Resources */,
+				9ECF0A4D5BE33638EA6F52F8 /* m3-template.png in Resources */,
+				DA6F602BF706CB53C5D7A739 /* my-car.png in Resources */,
+				F40AAD81422AC180BC41D347 /* my-mask.png in Resources */,
+				F0D9EEB2390D993BDDAD2389 /* my-overlay.png in Resources */,
+				B46651602E8BBF12B7F95CDA /* my-template.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0581C7C57581B11AA3F13DBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608051887C51DF0F627548AE /* CanvasView.swift in Sources */,
+				24D96BE1BB35A14710F8A4C8 /* ContentView.swift in Sources */,
+				11E2612EB852004F72070193 /* ExportPanel.swift in Sources */,
+				6AD327124AD9BB1B4545AF04 /* Stickers.swift in Sources */,
+				87FA2C27B2401A12EA0015E8 /* WrapStudioApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54A59CC6E5732129FCB3811F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 8UR98GGM8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tesla Car Wrap";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.teslacarwrap;
+				PRODUCT_NAME = "Tesla Car Wrap";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8998241E6D5FAD43F483105E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 8UR98GGM8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tesla Car Wrap";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.teslacarwrap;
+				PRODUCT_NAME = "Tesla Car Wrap";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A18935930605F7896438BC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F476A0CB89BF5A7F15B7C607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1CD3D69EAD75BBE2FE6845E /* Build configuration list for PBXNativeTarget "Tesla Car Wrap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8998241E6D5FAD43F483105E /* Debug */,
+				54A59CC6E5732129FCB3811F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1477A71F986ECD93F3686E4 /* Build configuration list for PBXProject "Tesla Car Wrap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F476A0CB89BF5A7F15B7C607 /* Debug */,
+				A18935930605F7896438BC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F74E09BF9C7A12612DD0CCD /* Project object */;
+}
