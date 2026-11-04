@@ -7,49 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04025264655BDBAE8FC06539 /* PaintCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852B64B066493C5996CE268B /* PaintCanvas.swift */; };
+		0568D5F92FECC3BBDEF73337 /* PlacedStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918C86ED149F53D285ADBD5 /* PlacedStickerView.swift */; };
 		11E2612EB852004F72070193 /* ExportPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCABC592FE7FBDD8743490D /* ExportPanel.swift */; };
+		12A2BA959EC476CBA9E53829 /* DrawingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3043E3165A220C349A6C4D9E /* DrawingCanvasView.swift */; };
+		149A6CC3FE3B3CDE8E5DD7A0 /* PaintTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73EB1E1E09256604405ECDF /* PaintTool.swift */; };
 		15001A17A644AEC156A764FB /* m3-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBAD4D291EF5F84916E8B86 /* m3-overlay.png */; };
+		1733E58F9974A38C8D11C2DC /* CanvasGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8425F0096C29C213DB882 /* CanvasGeometryTests.swift */; };
+		1BB8CD3D05EB1159454F3B5E /* WrapRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD53D1F658CE525FD4A6B5D /* WrapRenderer.swift */; };
+		1E5950324D4615EDFA2C6C9F /* CarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2CC0D25AE53749EABD07D1 /* CarPicker.swift */; };
+		204D28C7A133B35C93BCE3C4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185429A427DB0CB36B0C0150 /* Car.swift */; };
+		20F939CFA0629C1650792D06 /* StickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89631A0569E27C2DCF55426 /* StickerSheet.swift */; };
 		24D96BE1BB35A14710F8A4C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CF8030D549D6EE24C6E9C /* ContentView.swift */; };
 		2E21D83DED123177A3808D35 /* ct-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DB981D1B0335C5CED186C4 /* ct-mask.png */; };
+		30619042A8D7566F0DE5B1CA /* DesignRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E386214658D9A12B3DC70A2 /* DesignRepositoryTests.swift */; };
+		3A2837B17E793FFA9D061868 /* EditorControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C119373EAF4FCF3F3174B7FB /* EditorControls.swift */; };
+		44DF7FCA4D0FAA59E50E5E6F /* DesignRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9A34A902C364D6BFA0A87 /* DesignRepository.swift */; };
 		4E09BBDC283A85BDBA29B98C /* ct-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */; };
+		50F725AA9744C9969BEFC2E1 /* TestArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13EF0B2306390555737037 /* TestArtwork.swift */; };
+		555288A3C745A44B59A0736A /* StudioStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FAC2830EF650CB6D0A9E92 /* StudioStyle.swift */; };
+		5665E0899181F37864129293 /* StickerLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FEF1EB21DBEDFE74FAA1B /* StickerLibrary.swift */; };
+		5B148E5F52E3E500283A8C17 /* EditorFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084D8632401A111A83C40A2 /* EditorFlowTests.swift */; };
 		608051887C51DF0F627548AE /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0C550C1BD942AE20A5137 /* CanvasView.swift */; };
-		6AD327124AD9BB1B4545AF04 /* Stickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF70F891B1D354D930A355A /* Stickers.swift */; };
+		67154731DD00054AD75C09E4 /* EditorSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */; };
+		6E892CAFD76C3B175AE0C207 /* TemplateHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */; };
 		784710BF9EC75EE1B7EE2EBC /* ct-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 81011632EF1936FE4556AFA8 /* ct-car.png */; };
 		86B54DFD3C1535DB40B3C7DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816DEE7E91B1805AE9BAE26C /* Assets.xcassets */; };
 		87FA2C27B2401A12EA0015E8 /* WrapStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */; };
 		896AAF6F30BD82D5368BCFAE /* m3-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */; };
 		9ECF0A4D5BE33638EA6F52F8 /* m3-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1D885D454FDE1E76DEEEF7 /* m3-template.png */; };
+		A135A630A626F18E6750559B /* WrapRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */; };
+		AF4C786C5C08A43417EC55A9 /* PNGDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F6860189D591D1F9A919D /* PNGDocument.swift */; };
 		B46651602E8BBF12B7F95CDA /* my-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C674D9277D085B2784D5B1C /* my-template.png */; };
 		BD01A911CBD0988F838AFBDB /* m3-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 911791F519CB9F2D0E806991 /* m3-car.png */; };
+		C6FAD680E75C4253F3671F46 /* CanvasSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62826A6BE3CD26AB6FAFA0F /* CanvasSticker.swift */; };
+		D36A4A66677BADCBDE575E51 /* CarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E81551D8FF8F5F0AD53F9 /* CarCard.swift */; };
+		D5C5495E710B020C55704ABC /* WrapDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990BB1AA00286B0446C26C8D /* WrapDesign.swift */; };
 		DA6F602BF706CB53C5D7A739 /* my-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AEE2E6736F4B2129F375724 /* my-car.png */; };
 		DE45EF766FE9DDC610340485 /* ct-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC2ADBF3FCB70E9E0AEF6CD /* ct-template.png */; };
+		E88BDFB8087FCB18E592FE19 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BBD8D079A3C38C161A2DFC /* CarTests.swift */; };
+		E95D8210938FD56A70B521B3 /* EditorSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40882BDE8824E9221D5CD971 /* EditorSession.swift */; };
+		EA32D41F3616D4FEBF85E7CE /* ExportedWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D969FADF9CD0738D76147C /* ExportedWrap.swift */; };
+		EA3DBCA1438145996275F351 /* TemplatePaintSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBE4247549134571A6C7BC /* TemplatePaintSurface.swift */; };
+		EC42A42230865DF442501D36 /* StudioError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA79681BD5E3669DA812DA4 /* StudioError.swift */; };
+		F0BF050272A0ED9136558504 /* CanvasGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF7F4179CA28724BA6D7536 /* CanvasGeometry.swift */; };
 		F0D9EEB2390D993BDDAD2389 /* my-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8BC3FCF8DE86FC07F15FDA /* my-overlay.png */; };
 		F40AAD81422AC180BC41D347 /* my-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = A75E3B443EF6AAC83ECC191B /* my-mask.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		884D1EB337ECB85DE8D9FA98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F74E09BF9C7A12612DD0CCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544C6CDCCCE045AE7BB542E6;
+			remoteInfo = "Tesla Car Wrap";
+		};
+		B60E80E7AFA962D13938AE42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F74E09BF9C7A12612DD0CCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544C6CDCCCE045AE7BB542E6;
+			remoteInfo = "Tesla Car Wrap";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0057CFE1F1592DF86EC57D6A /* WrapStudioTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WrapStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D9FEF1EB21DBEDFE74FAA1B /* StickerLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerLibrary.swift; sourceTree = "<group>"; };
+		185429A427DB0CB36B0C0150 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		1BCABC592FE7FBDD8743490D /* ExportPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPanel.swift; sourceTree = "<group>"; };
 		1CBAD4D291EF5F84916E8B86 /* m3-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-overlay.png"; sourceTree = "<group>"; };
 		1F1D885D454FDE1E76DEEEF7 /* m3-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-template.png"; sourceTree = "<group>"; };
+		2DD8425F0096C29C213DB882 /* CanvasGeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasGeometryTests.swift; sourceTree = "<group>"; };
+		2DF7F4179CA28724BA6D7536 /* CanvasGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasGeometry.swift; sourceTree = "<group>"; };
+		2E13EF0B2306390555737037 /* TestArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArtwork.swift; sourceTree = "<group>"; };
+		3043E3165A220C349A6C4D9E /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
+		337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRendererTests.swift; sourceTree = "<group>"; };
+		35CBE4247549134571A6C7BC /* TemplatePaintSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePaintSurface.swift; sourceTree = "<group>"; };
 		3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapStudioApp.swift; sourceTree = "<group>"; };
+		40882BDE8824E9221D5CD971 /* EditorSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSession.swift; sourceTree = "<group>"; };
+		4A0E81551D8FF8F5F0AD53F9 /* CarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCard.swift; sourceTree = "<group>"; };
 		4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-mask.png"; sourceTree = "<group>"; };
 		4AEE2E6736F4B2129F375724 /* my-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-car.png"; sourceTree = "<group>"; };
+		4E386214658D9A12B3DC70A2 /* DesignRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignRepositoryTests.swift; sourceTree = "<group>"; };
 		4F8BC3FCF8DE86FC07F15FDA /* my-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-overlay.png"; sourceTree = "<group>"; };
+		52BBD8D079A3C38C161A2DFC /* CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTests.swift; sourceTree = "<group>"; };
 		5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-overlay.png"; sourceTree = "<group>"; };
-		6EF70F891B1D354D930A355A /* Stickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stickers.swift; sourceTree = "<group>"; };
+		65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateHostView.swift; sourceTree = "<group>"; };
+		6918C86ED149F53D285ADBD5 /* PlacedStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacedStickerView.swift; sourceTree = "<group>"; };
+		70FAC2830EF650CB6D0A9E92 /* StudioStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioStyle.swift; sourceTree = "<group>"; };
 		74F0C550C1BD942AE20A5137 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		772F6860189D591D1F9A919D /* PNGDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNGDocument.swift; sourceTree = "<group>"; };
+		79D9A34A902C364D6BFA0A87 /* DesignRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignRepository.swift; sourceTree = "<group>"; };
 		7A012488B9CE166598AF67C9 /* Tesla Car Wrap.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Tesla Car Wrap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD53D1F658CE525FD4A6B5D /* WrapRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRenderer.swift; sourceTree = "<group>"; };
 		7CC2ADBF3FCB70E9E0AEF6CD /* ct-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-template.png"; sourceTree = "<group>"; };
 		81011632EF1936FE4556AFA8 /* ct-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-car.png"; sourceTree = "<group>"; };
 		816DEE7E91B1805AE9BAE26C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DB981D1B0335C5CED186C4 /* ct-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-mask.png"; sourceTree = "<group>"; };
+		852B64B066493C5996CE268B /* PaintCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintCanvas.swift; sourceTree = "<group>"; };
 		8C674D9277D085B2784D5B1C /* my-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-template.png"; sourceTree = "<group>"; };
 		911791F519CB9F2D0E806991 /* m3-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-car.png"; sourceTree = "<group>"; };
+		93A897B54673AA0D26FFDA09 /* WrapStudioUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WrapStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D969FADF9CD0738D76147C /* ExportedWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportedWrap.swift; sourceTree = "<group>"; };
+		990BB1AA00286B0446C26C8D /* WrapDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapDesign.swift; sourceTree = "<group>"; };
+		A084D8632401A111A83C40A2 /* EditorFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorFlowTests.swift; sourceTree = "<group>"; };
 		A75E3B443EF6AAC83ECC191B /* my-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-mask.png"; sourceTree = "<group>"; };
+		B73EB1E1E09256604405ECDF /* PaintTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintTool.swift; sourceTree = "<group>"; };
 		BE8CF8030D549D6EE24C6E9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C119373EAF4FCF3F3174B7FB /* EditorControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorControls.swift; sourceTree = "<group>"; };
+		D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSessionTests.swift; sourceTree = "<group>"; };
+		D62826A6BE3CD26AB6FAFA0F /* CanvasSticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasSticker.swift; sourceTree = "<group>"; };
+		DBA79681BD5E3669DA812DA4 /* StudioError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioError.swift; sourceTree = "<group>"; };
+		DE2CC0D25AE53749EABD07D1 /* CarPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPicker.swift; sourceTree = "<group>"; };
+		E89631A0569E27C2DCF55426 /* StickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		03F67114E1E2FD1A14FCD95E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D62826A6BE3CD26AB6FAFA0F /* CanvasSticker.swift */,
+				185429A427DB0CB36B0C0150 /* Car.swift */,
+				B73EB1E1E09256604405ECDF /* PaintTool.swift */,
+				DBA79681BD5E3669DA812DA4 /* StudioError.swift */,
+				990BB1AA00286B0446C26C8D /* WrapDesign.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		077E79E239E679DB9A1A26D8 /* WrapStudio */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,27 +144,96 @@
 				74F0C550C1BD942AE20A5137 /* CanvasView.swift */,
 				BE8CF8030D549D6EE24C6E9C /* ContentView.swift */,
 				1BCABC592FE7FBDD8743490D /* ExportPanel.swift */,
-				6EF70F891B1D354D930A355A /* Stickers.swift */,
 				3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */,
 				BDEFB50B4436784751823DC1 /* Assets */,
+				D66AD8603617B4C3394088B3 /* Design */,
+				1DB2CA0D33E2B41A031B4E29 /* Editor */,
+				CC577E671F0B29756E94829E /* Export */,
+				03F67114E1E2FD1A14FCD95E /* Models */,
+				F55933221E3FBF6AF7009A24 /* Picker */,
+				0BA42CCF2BFB6C3CBE1EA817 /* Stickers */,
+				D16EFD1783AEF3610EC8B336 /* Storage */,
 			);
 			path = WrapStudio;
+			sourceTree = "<group>";
+		};
+		0BA42CCF2BFB6C3CBE1EA817 /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				6918C86ED149F53D285ADBD5 /* PlacedStickerView.swift */,
+				E89631A0569E27C2DCF55426 /* StickerSheet.swift */,
+			);
+			path = Stickers;
+			sourceTree = "<group>";
+		};
+		1DB2CA0D33E2B41A031B4E29 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				2DF7F4179CA28724BA6D7536 /* CanvasGeometry.swift */,
+				3043E3165A220C349A6C4D9E /* DrawingCanvasView.swift */,
+				C119373EAF4FCF3F3174B7FB /* EditorControls.swift */,
+				40882BDE8824E9221D5CD971 /* EditorSession.swift */,
+				852B64B066493C5996CE268B /* PaintCanvas.swift */,
+				65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */,
+				35CBE4247549134571A6C7BC /* TemplatePaintSurface.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		44460751FA3CCC1CDEFA5F5E /* WrapStudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD94BA7ED1283B8371C2894D /* Editor */,
+				B5D0DF0D5F04DC2FC16B84F9 /* Export */,
+				C98A907F8CF59481AE1DB006 /* Fixtures */,
+				5AD21DCFECCB6E365B60FE42 /* Models */,
+				7C4D6F26CB59F885F561CCCC /* Storage */,
+			);
+			path = WrapStudioTests;
 			sourceTree = "<group>";
 		};
 		5442AABB13D6CCD70BFAC36F = {
 			isa = PBXGroup;
 			children = (
 				077E79E239E679DB9A1A26D8 /* WrapStudio */,
+				44460751FA3CCC1CDEFA5F5E /* WrapStudioTests */,
+				EC52E8AD88F71A3943ECD1AC /* WrapStudioUITests */,
 				8A7B65213A43A4EB3CF3E296 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		5AD21DCFECCB6E365B60FE42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52BBD8D079A3C38C161A2DFC /* CarTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C4D6F26CB59F885F561CCCC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4E386214658D9A12B3DC70A2 /* DesignRepositoryTests.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		8A7B65213A43A4EB3CF3E296 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				7A012488B9CE166598AF67C9 /* Tesla Car Wrap.app */,
+				0057CFE1F1592DF86EC57D6A /* WrapStudioTests.xctest */,
+				93A897B54673AA0D26FFDA09 /* WrapStudioUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B5D0DF0D5F04DC2FC16B84F9 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */,
+			);
+			path = Export;
 			sourceTree = "<group>";
 		};
 		BDEFB50B4436784751823DC1 /* Assets */ = {
@@ -99,9 +255,88 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		C98A907F8CF59481AE1DB006 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				2E13EF0B2306390555737037 /* TestArtwork.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		CC577E671F0B29756E94829E /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				95D969FADF9CD0738D76147C /* ExportedWrap.swift */,
+				772F6860189D591D1F9A919D /* PNGDocument.swift */,
+				7AD53D1F658CE525FD4A6B5D /* WrapRenderer.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		CD94BA7ED1283B8371C2894D /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				2DD8425F0096C29C213DB882 /* CanvasGeometryTests.swift */,
+				D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		D16EFD1783AEF3610EC8B336 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				79D9A34A902C364D6BFA0A87 /* DesignRepository.swift */,
+				0D9FEF1EB21DBEDFE74FAA1B /* StickerLibrary.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		D66AD8603617B4C3394088B3 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				70FAC2830EF650CB6D0A9E92 /* StudioStyle.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		EC52E8AD88F71A3943ECD1AC /* WrapStudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A084D8632401A111A83C40A2 /* EditorFlowTests.swift */,
+			);
+			path = WrapStudioUITests;
+			sourceTree = "<group>";
+		};
+		F55933221E3FBF6AF7009A24 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				4A0E81551D8FF8F5F0AD53F9 /* CarCard.swift */,
+				DE2CC0D25AE53749EABD07D1 /* CarPicker.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1EAE4C6AD685D1608A4FCC5F /* WrapStudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3B3C972E253C6C45462F6A1 /* Build configuration list for PBXNativeTarget "WrapStudioTests" */;
+			buildPhases = (
+				453DDAF1CF8F33D287085E65 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74C45BDF78BEAA3B79838D93 /* PBXTargetDependency */,
+			);
+			name = WrapStudioTests;
+			packageProductDependencies = (
+			);
+			productName = WrapStudioTests;
+			productReference = 0057CFE1F1592DF86EC57D6A /* WrapStudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		544C6CDCCCE045AE7BB542E6 /* Tesla Car Wrap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1CD3D69EAD75BBE2FE6845E /* Build configuration list for PBXNativeTarget "Tesla Car Wrap" */;
@@ -120,6 +355,24 @@
 			productReference = 7A012488B9CE166598AF67C9 /* Tesla Car Wrap.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B30DCB7AD5DB8CB279DF2345 /* WrapStudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF960FC323A6DC1A52267A1C /* Build configuration list for PBXNativeTarget "WrapStudioUITests" */;
+			buildPhases = (
+				442CB33BA3888D6F114F5D5E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12094245B67EB00FFD6CB161 /* PBXTargetDependency */,
+			);
+			name = WrapStudioUITests;
+			packageProductDependencies = (
+			);
+			productName = WrapStudioUITests;
+			productReference = 93A897B54673AA0D26FFDA09 /* WrapStudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -130,8 +383,10 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					544C6CDCCCE045AE7BB542E6 = {
-						DevelopmentTeam = 8UR98GGM8L;
 						ProvisioningStyle = Automatic;
+					};
+					B30DCB7AD5DB8CB279DF2345 = {
+						TestTargetID = 544C6CDCCCE045AE7BB542E6;
 					};
 				};
 			};
@@ -150,6 +405,8 @@
 			projectRoot = "";
 			targets = (
 				544C6CDCCCE045AE7BB542E6 /* Tesla Car Wrap */,
+				1EAE4C6AD685D1608A4FCC5F /* WrapStudioTests */,
+				B30DCB7AD5DB8CB279DF2345 /* WrapStudioUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,37 +439,143 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BF050272A0ED9136558504 /* CanvasGeometry.swift in Sources */,
+				C6FAD680E75C4253F3671F46 /* CanvasSticker.swift in Sources */,
 				608051887C51DF0F627548AE /* CanvasView.swift in Sources */,
+				204D28C7A133B35C93BCE3C4 /* Car.swift in Sources */,
+				D36A4A66677BADCBDE575E51 /* CarCard.swift in Sources */,
+				1E5950324D4615EDFA2C6C9F /* CarPicker.swift in Sources */,
 				24D96BE1BB35A14710F8A4C8 /* ContentView.swift in Sources */,
+				44DF7FCA4D0FAA59E50E5E6F /* DesignRepository.swift in Sources */,
+				12A2BA959EC476CBA9E53829 /* DrawingCanvasView.swift in Sources */,
+				3A2837B17E793FFA9D061868 /* EditorControls.swift in Sources */,
+				E95D8210938FD56A70B521B3 /* EditorSession.swift in Sources */,
 				11E2612EB852004F72070193 /* ExportPanel.swift in Sources */,
-				6AD327124AD9BB1B4545AF04 /* Stickers.swift in Sources */,
+				EA32D41F3616D4FEBF85E7CE /* ExportedWrap.swift in Sources */,
+				AF4C786C5C08A43417EC55A9 /* PNGDocument.swift in Sources */,
+				04025264655BDBAE8FC06539 /* PaintCanvas.swift in Sources */,
+				149A6CC3FE3B3CDE8E5DD7A0 /* PaintTool.swift in Sources */,
+				0568D5F92FECC3BBDEF73337 /* PlacedStickerView.swift in Sources */,
+				5665E0899181F37864129293 /* StickerLibrary.swift in Sources */,
+				20F939CFA0629C1650792D06 /* StickerSheet.swift in Sources */,
+				EC42A42230865DF442501D36 /* StudioError.swift in Sources */,
+				555288A3C745A44B59A0736A /* StudioStyle.swift in Sources */,
+				6E892CAFD76C3B175AE0C207 /* TemplateHostView.swift in Sources */,
+				EA3DBCA1438145996275F351 /* TemplatePaintSurface.swift in Sources */,
+				D5C5495E710B020C55704ABC /* WrapDesign.swift in Sources */,
+				1BB8CD3D05EB1159454F3B5E /* WrapRenderer.swift in Sources */,
 				87FA2C27B2401A12EA0015E8 /* WrapStudioApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442CB33BA3888D6F114F5D5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B148E5F52E3E500283A8C17 /* EditorFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453DDAF1CF8F33D287085E65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1733E58F9974A38C8D11C2DC /* CanvasGeometryTests.swift in Sources */,
+				E88BDFB8087FCB18E592FE19 /* CarTests.swift in Sources */,
+				30619042A8D7566F0DE5B1CA /* DesignRepositoryTests.swift in Sources */,
+				67154731DD00054AD75C09E4 /* EditorSessionTests.swift in Sources */,
+				50F725AA9744C9969BEFC2E1 /* TestArtwork.swift in Sources */,
+				A135A630A626F18E6750559B /* WrapRendererTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		12094245B67EB00FFD6CB161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 544C6CDCCCE045AE7BB542E6 /* Tesla Car Wrap */;
+			targetProxy = B60E80E7AFA962D13938AE42 /* PBXContainerItemProxy */;
+		};
+		74C45BDF78BEAA3B79838D93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 544C6CDCCCE045AE7BB542E6 /* Tesla Car Wrap */;
+			targetProxy = 884D1EB337ECB85DE8D9FA98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		251810EC76BC310DDF20A5C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.WrapStudioUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tesla Car Wrap";
+			};
+			name = Debug;
+		};
+		33254F002A80D8ACE4EDCF72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.WrapStudioTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tesla Car Wrap.app/Tesla Car Wrap";
+			};
+			name = Release;
+		};
+		36BFC8B07F8703E689E76C53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.WrapStudioTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tesla Car Wrap.app/Tesla Car Wrap";
+			};
+			name = Debug;
+		};
 		54A59CC6E5732129FCB3811F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 8UR98GGM8L;
+				CURRENT_PROJECT_VERSION = 8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tesla Car Wrap";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.teslacarwrap;
 				PRODUCT_NAME = "Tesla Car Wrap";
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -223,20 +586,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_TEAM = 8UR98GGM8L;
+				CURRENT_PROJECT_VERSION = 8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tesla Car Wrap";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.teslacarwrap;
 				PRODUCT_NAME = "Tesla Car Wrap";
 				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -286,14 +649,32 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC92932DFAC0751D416B5C81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.WrapStudioUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tesla Car Wrap";
 			};
 			name = Release;
 		};
@@ -348,7 +729,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -356,7 +737,8 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -368,6 +750,24 @@
 			buildConfigurations = (
 				8998241E6D5FAD43F483105E /* Debug */,
 				54A59CC6E5732129FCB3811F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3B3C972E253C6C45462F6A1 /* Build configuration list for PBXNativeTarget "WrapStudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36BFC8B07F8703E689E76C53 /* Debug */,
+				33254F002A80D8ACE4EDCF72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EF960FC323A6DC1A52267A1C /* Build configuration list for PBXNativeTarget "WrapStudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251810EC76BC310DDF20A5C8 /* Debug */,
+				AC92932DFAC0751D416B5C81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

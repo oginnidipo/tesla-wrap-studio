@@ -2,7 +2,11 @@ name: Tesla Car Wrap
 options:
   bundleIdPrefix: com.dipops
   deploymentTarget:
-    iOS: "16.0"
+    iOS: "17.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
 targets:
   Tesla Car Wrap:
     type: application
@@ -11,12 +15,39 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.dipops.teslacarwrap
-        MARKETING_VERSION: "1.1"
-        CURRENT_PROJECT_VERSION: "7"
-        DEVELOPMENT_TEAM: 8UR98GGM8L
+        MARKETING_VERSION: "1.2"
+        CURRENT_PROJECT_VERSION: "8"
         CODE_SIGN_STYLE: Automatic
         PRODUCT_NAME: "Tesla Car Wrap"
         GENERATE_INFOPLIST_FILE: YES
+        SWIFT_EMIT_LOC_STRINGS: YES
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"
         INFOPLIST_KEY_CFBundleDisplayName: "Tesla Car Wrap"
+  WrapStudioTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [WrapStudioTests]
+    dependencies:
+      - target: Tesla Car Wrap
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+  WrapStudioUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [WrapStudioUITests]
+    dependencies:
+      - target: Tesla Car Wrap
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  Tesla Car Wrap:
+    build:
+      targets:
+        Tesla Car Wrap: all
+    test:
+      targets:
+        - WrapStudioTests
+        - WrapStudioUITests
