@@ -8,7 +8,7 @@ struct CarPicker: View {
                     Label("WRAP STUDIO", systemImage: "paintpalette.fill")
                         .font(.caption.weight(.heavy)).tracking(2).foregroundStyle(StudioStyle.accent)
                     Text("Your Tesla.\nYour signature.")
-                        .font(.largeTitle.bold()).fontDesign(.rounded)
+                        .font(.system(.largeTitle, design: .rounded, weight: .bold))
                     Text("Turn a blank canvas into something unmistakably you.")
                         .font(.body).foregroundStyle(.secondary)
                 }

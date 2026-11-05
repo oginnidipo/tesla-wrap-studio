@@ -1,14 +1,14 @@
 import SwiftUI
 
 struct CanvasView: View {
-    @State private var session: EditorSession
+    @StateObject private var session: EditorSession
     @State private var showingStickers = false
     @State private var showingClearConfirmation = false
     @State private var export: ExportedWrap?
     @Environment(\.scenePhase) private var scenePhase
 
     init(car: Car) {
-        _session = State(initialValue: EditorSession(car: car))
+        _session = StateObject(wrappedValue: EditorSession(car: car))
     }
 
     var body: some View {
@@ -48,15 +48,15 @@ struct CanvasView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(.visible, for: .navigationBar)
         .toolbar {
-            ToolbarItemGroup(placement: .topBarTrailing) {
-                Button("Undo", systemImage: "arrow.uturn.backward", action: session.undo)
+            ToolbarItemGroup(placement: .primaryAction) {
+                Button(action: session.undo) { Label("Undo", systemImage: "arrow.uturn.backward") }
                     .disabled(!session.canUndo).accessibilityIdentifier("undo")
-                Button("Redo", systemImage: "arrow.uturn.forward", action: session.redo)
+                Button(action: session.redo) { Label("Redo", systemImage: "arrow.uturn.forward") }
                     .disabled(!session.canRedo).accessibilityIdentifier("redo")
-                Menu("More", systemImage: "ellipsis.circle") {
-                    Button("Clear design", systemImage: "trash", role: .destructive) { showingClearConfirmation = true }
+                Menu {
+                    Button(role: .destructive) { showingClearConfirmation = true } label: { Label("Clear design", systemImage: "trash") }
                         .disabled(!session.hasArtwork)
-                }
+                } label: { Label("More", systemImage: "ellipsis.circle") }
             }
         }
         .sheet(isPresented: $showingStickers) { StickerSheet(session: session) }
@@ -69,8 +69,8 @@ struct CanvasView: View {
         )) {
             Button("OK") { session.errorMessage = nil }
         } message: { Text(session.errorMessage ?? "") }
-        .onChange(of: scenePhase) { _, phase in
-            if phase != .active { session.persistNow() }
+        .task(id: scenePhase) {
+            if scenePhase != .active { session.persistNow() }
         }
         .onDisappear(perform: session.persistNow)
     }

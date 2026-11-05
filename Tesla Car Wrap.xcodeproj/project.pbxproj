@@ -30,8 +30,11 @@
 		5B148E5F52E3E500283A8C17 /* EditorFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084D8632401A111A83C40A2 /* EditorFlowTests.swift */; };
 		608051887C51DF0F627548AE /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0C550C1BD942AE20A5137 /* CanvasView.swift */; };
 		67154731DD00054AD75C09E4 /* EditorSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */; };
+		6B8D2F9A4DD4497BE1FD4348 /* PhotoLibraryWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93AA9A44D08672F121AD013 /* PhotoLibraryWriter.swift */; };
+		6C9CCCD33D913C22EC397D5B /* PhotoExportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F173F566028CBA1B5FDCDD9 /* PhotoExportModel.swift */; };
 		6E892CAFD76C3B175AE0C207 /* TemplateHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */; };
 		784710BF9EC75EE1B7EE2EBC /* ct-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 81011632EF1936FE4556AFA8 /* ct-car.png */; };
+		7B01F8CEAB3240657526E21B /* PhotoExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7059B33E637AF2BD2094BDFB /* PhotoExportTests.swift */; };
 		86B54DFD3C1535DB40B3C7DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816DEE7E91B1805AE9BAE26C /* Assets.xcassets */; };
 		87FA2C27B2401A12EA0015E8 /* WrapStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */; };
 		896AAF6F30BD82D5368BCFAE /* m3-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */; };
@@ -82,6 +85,7 @@
 		2DD8425F0096C29C213DB882 /* CanvasGeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasGeometryTests.swift; sourceTree = "<group>"; };
 		2DF7F4179CA28724BA6D7536 /* CanvasGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasGeometry.swift; sourceTree = "<group>"; };
 		2E13EF0B2306390555737037 /* TestArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArtwork.swift; sourceTree = "<group>"; };
+		2F173F566028CBA1B5FDCDD9 /* PhotoExportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoExportModel.swift; sourceTree = "<group>"; };
 		3043E3165A220C349A6C4D9E /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
 		337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRendererTests.swift; sourceTree = "<group>"; };
 		35CBE4247549134571A6C7BC /* TemplatePaintSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePaintSurface.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 		5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-overlay.png"; sourceTree = "<group>"; };
 		65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateHostView.swift; sourceTree = "<group>"; };
 		6918C86ED149F53D285ADBD5 /* PlacedStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacedStickerView.swift; sourceTree = "<group>"; };
+		7059B33E637AF2BD2094BDFB /* PhotoExportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoExportTests.swift; sourceTree = "<group>"; };
 		70FAC2830EF650CB6D0A9E92 /* StudioStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioStyle.swift; sourceTree = "<group>"; };
 		74F0C550C1BD942AE20A5137 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		772F6860189D591D1F9A919D /* PNGDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNGDocument.swift; sourceTree = "<group>"; };
@@ -115,6 +120,7 @@
 		A084D8632401A111A83C40A2 /* EditorFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorFlowTests.swift; sourceTree = "<group>"; };
 		A75E3B443EF6AAC83ECC191B /* my-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-mask.png"; sourceTree = "<group>"; };
 		B73EB1E1E09256604405ECDF /* PaintTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintTool.swift; sourceTree = "<group>"; };
+		B93AA9A44D08672F121AD013 /* PhotoLibraryWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryWriter.swift; sourceTree = "<group>"; };
 		BE8CF8030D549D6EE24C6E9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C119373EAF4FCF3F3174B7FB /* EditorControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorControls.swift; sourceTree = "<group>"; };
 		D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSessionTests.swift; sourceTree = "<group>"; };
@@ -231,6 +237,7 @@
 		B5D0DF0D5F04DC2FC16B84F9 /* Export */ = {
 			isa = PBXGroup;
 			children = (
+				7059B33E637AF2BD2094BDFB /* PhotoExportTests.swift */,
 				337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */,
 			);
 			path = Export;
@@ -267,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				95D969FADF9CD0738D76147C /* ExportedWrap.swift */,
+				2F173F566028CBA1B5FDCDD9 /* PhotoExportModel.swift */,
+				B93AA9A44D08672F121AD013 /* PhotoLibraryWriter.swift */,
 				772F6860189D591D1F9A919D /* PNGDocument.swift */,
 				7AD53D1F658CE525FD4A6B5D /* WrapRenderer.swift */,
 			);
@@ -455,6 +464,8 @@
 				AF4C786C5C08A43417EC55A9 /* PNGDocument.swift in Sources */,
 				04025264655BDBAE8FC06539 /* PaintCanvas.swift in Sources */,
 				149A6CC3FE3B3CDE8E5DD7A0 /* PaintTool.swift in Sources */,
+				6C9CCCD33D913C22EC397D5B /* PhotoExportModel.swift in Sources */,
+				6B8D2F9A4DD4497BE1FD4348 /* PhotoLibraryWriter.swift in Sources */,
 				0568D5F92FECC3BBDEF73337 /* PlacedStickerView.swift in Sources */,
 				5665E0899181F37864129293 /* StickerLibrary.swift in Sources */,
 				20F939CFA0629C1650792D06 /* StickerSheet.swift in Sources */,
@@ -484,6 +495,7 @@
 				E88BDFB8087FCB18E592FE19 /* CarTests.swift in Sources */,
 				30619042A8D7566F0DE5B1CA /* DesignRepositoryTests.swift in Sources */,
 				67154731DD00054AD75C09E4 /* EditorSessionTests.swift in Sources */,
+				7B01F8CEAB3240657526E21B /* PhotoExportTests.swift in Sources */,
 				50F725AA9744C9969BEFC2E1 /* TestArtwork.swift in Sources */,
 				A135A630A626F18E6750559B /* WrapRendererTests.swift in Sources */,
 			);
@@ -510,6 +522,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,6 +540,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,6 +558,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,16 +577,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 10;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tesla Car Wrap";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your wrap as a PNG in Photos so you can upload it from the Tesla app.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.teslacarwrap;
 				PRODUCT_NAME = "Tesla Car Wrap";
 				SDKROOT = iphoneos;
@@ -586,16 +602,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 10;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tesla Car Wrap";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your wrap as a PNG in Photos so you can upload it from the Tesla app.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.teslacarwrap;
 				PRODUCT_NAME = "Tesla Car Wrap";
 				SDKROOT = iphoneos;
@@ -649,7 +666,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -666,6 +683,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -729,7 +747,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

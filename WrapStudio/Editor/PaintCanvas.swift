@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PaintCanvas: View {
-    let session: EditorSession
+    @ObservedObject var session: EditorSession
 
     var body: some View {
         // GeometryReader is intentional: the PencilKit bridge and sticker gestures must
@@ -30,7 +30,7 @@ struct PaintCanvas: View {
             .task(id: geometry.size) { session.migrateLegacyIfNeeded(in: geometry.size) }
         }
         .background(.white)
-        .clipShape(.rect(cornerRadius: 18))
+        .clipShape(RoundedRectangle(cornerRadius: 18))
         .overlay { RoundedRectangle(cornerRadius: 18).strokeBorder(.primary.opacity(0.08)) }
     }
 }

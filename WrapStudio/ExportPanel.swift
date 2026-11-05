@@ -4,6 +4,8 @@ struct ExportPanel: View {
     let car: Car
     let wrap: ExportedWrap
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.openURL) private var openURL
+    @StateObject private var photos = PhotoExportModel()
     @State private var showingFileExporter = false
     @State private var status: String?
 
@@ -11,17 +13,31 @@ struct ExportPanel: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 22) {
-                    Text("Ready for a new look.").font(.largeTitle.bold()).fontDesign(.rounded)
+                    Text("Ready for a new look.").font(.system(.largeTitle, design: .rounded, weight: .bold))
                     Image(uiImage: wrap.image).resizable().scaledToFit()
                         .frame(maxHeight: 320).frame(maxWidth: .infinity)
-                        .background(.white, in: .rect(cornerRadius: 16))
+                        .background(.white, in: RoundedRectangle(cornerRadius: 16))
                         .accessibilityLabel("Your completed \(car.name) wrap")
                     Label("PNG · \(wrap.dimensions) · \(wrap.fileSize)", systemImage: "checkmark.seal.fill")
                         .font(.subheadline.weight(.semibold)).foregroundStyle(.green)
 
-                    Button("Save to Files", systemImage: "folder") { showingFileExporter = true }
+                    Button {
+                        Task { await photos.save(wrap) }
+                    } label: {
+                        HStack {
+                            if photos.state == .saving { ProgressView().tint(.white) }
+                            Label(photos.state == .saved ? "Saved to Photos" : "Save PNG to Photos",
+                                  systemImage: photos.state == .saved ? "checkmark.circle.fill" : "photo.badge.arrow.down")
+                        }.font(.headline).frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.borderedProminent).controlSize(.large)
+                    .disabled(photos.state == .saving || photos.state == .saved)
+                    .accessibilityIdentifier("saveToPhotos")
+                    photoStatus
+
+                    Button { showingFileExporter = true } label: { Label("Save to Files", systemImage: "folder").frame(maxWidth: .infinity) }
                         .font(.headline).frame(maxWidth: .infinity)
-                        .buttonStyle(.borderedProminent).controlSize(.large)
+                        .buttonStyle(.bordered).controlSize(.large)
                         .accessibilityIdentifier("saveToFiles")
                     ShareLink(item: wrap.fileURL, preview: SharePreview("My \(car.name) wrap", image: Image(uiImage: wrap.image))) {
                         Label("Share PNG", systemImage: "square.and.arrow.up").font(.headline).frame(maxWidth: .infinity)
@@ -31,7 +47,9 @@ struct ExportPanel: View {
 
                     VStack(alignment: .leading, spacing: 12) {
                         Label("Bring it to Paint Shop", systemImage: "car.side").font(.headline)
-                        Text("In the Tesla app, open Creations → Wrap → Upload. Or put the PNG in a Wraps folder on your USB drive.")
+                        Text("1. Save your PNG to Photos above.")
+                        Text("2. In the Tesla app, open Creations → Wrap → Upload and choose your saved wrap from Photos.")
+                        Text("Using a USB drive? Save to Files, then copy the PNG into a Wraps folder at the drive’s root.")
                         Text("In your vehicle, open Toybox → Paint Shop → Wraps. This changes the on-screen visualization.")
                         Text("\(car.templateNote). Check that this template matches your vehicle’s body style.")
                             .font(.footnote).foregroundStyle(.secondary)
@@ -39,7 +57,7 @@ struct ExportPanel: View {
                             .font(.footnote.weight(.semibold))
                     }
                     .font(.subheadline).padding(18)
-                    .background(Color(.secondarySystemGroupedBackground), in: .rect(cornerRadius: 18))
+                    .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 18))
                 }.padding(22).frame(maxWidth: 720).frame(maxWidth: .infinity)
             }
             .background(Color(.systemGroupedBackground))
@@ -53,6 +71,23 @@ struct ExportPanel: View {
                     if (error as NSError).code != NSUserCancelledError { status = "Could not save: \(error.localizedDescription)" }
                 }
             }
+        }
+    }
+
+    @ViewBuilder private var photoStatus: some View {
+        switch photos.state {
+        case .saved:
+            Text("Your PNG is in Photos. Open the Tesla app to upload it.")
+                .font(.callout).foregroundStyle(.secondary).accessibilityIdentifier("photoSaveConfirmation")
+        case .denied:
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Allow Wrap Studio to add photos in Settings, then try again. You can also save to Files or share the PNG.")
+                Button("Open Settings") { openURL(URL(string: UIApplication.openSettingsURLString)!) }
+            }.font(.callout)
+        case .failed(let message):
+            Text("Could not save to Photos: \(message)").font(.callout).foregroundStyle(.red)
+        case .ready, .saving:
+            EmptyView()
         }
     }
 }

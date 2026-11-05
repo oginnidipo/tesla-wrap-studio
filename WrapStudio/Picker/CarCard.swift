@@ -24,6 +24,6 @@ struct CarCard: View {
         .frame(minHeight: cardHeight)
         .foregroundStyle(.white)
         .background(Color(white: 0.075))
-        .clipShape(.rect(cornerRadius: 22))
+        .clipShape(RoundedRectangle(cornerRadius: 22))
     }
 }

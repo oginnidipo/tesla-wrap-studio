@@ -1,32 +1,32 @@
-import Observation
+import Combine
 import PencilKit
 import SwiftUI
 
-@MainActor @Observable
-final class EditorSession {
+/// ObservableObject keeps the editor available on the original iPadOS 16 devices.
+@MainActor final class EditorSession: ObservableObject {
     let car: Car
     let stickerLibrary: StickerLibrary
-    private(set) var drawing = PKDrawing()
-    private(set) var stickers: [CanvasSticker] = []
-    private(set) var fillHex: String?
-    private(set) var drawingRevision = 0
-    private(set) var canUndo = false
-    private(set) var canRedo = false
-    private(set) var saveStatus = "All changes saved"
-    var selectedStickerID: UUID?
-    var tool: PaintTool = .pen
-    var inkColor: Color = .init(red: 0.94, green: 0.29, blue: 0.20)
-    var inkWidth: CGFloat = 10
-    var errorMessage: String?
+    @Published private(set) var drawing = PKDrawing()
+    @Published private(set) var stickers: [CanvasSticker] = []
+    @Published private(set) var fillHex: String?
+    @Published private(set) var drawingRevision = 0
+    @Published private(set) var canUndo = false
+    @Published private(set) var canRedo = false
+    @Published private(set) var saveStatus = "All changes saved"
+    @Published var selectedStickerID: UUID?
+    @Published var tool: PaintTool = .pen
+    @Published var inkColor: Color = .init(red: 0.94, green: 0.29, blue: 0.20)
+    @Published var inkWidth: CGFloat = 10
+    @Published var errorMessage: String?
 
-    @ObservationIgnored private let repository: DesignRepository
-    @ObservationIgnored private var undoHistory: [WrapDesign] = []
-    @ObservationIgnored private var redoHistory: [WrapDesign] = []
-    @ObservationIgnored private var editStart: WrapDesign?
-    @ObservationIgnored private var saveTask: Task<Void, Never>?
-    @ObservationIgnored private var needsLegacyMigration = false
-    @ObservationIgnored private var canPersist = true
-    @ObservationIgnored private var hasUnsavedChanges = false
+    private let repository: DesignRepository
+    private var undoHistory: [WrapDesign] = []
+    private var redoHistory: [WrapDesign] = []
+    private var editStart: WrapDesign?
+    private var saveTask: Task<Void, Never>?
+    private var needsLegacyMigration = false
+    private var canPersist = true
+    private var hasUnsavedChanges = false
 
     init(car: Car, repository: DesignRepository = DesignRepository()) {
         self.car = car

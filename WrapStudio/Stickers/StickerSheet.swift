@@ -2,7 +2,7 @@ import PhotosUI
 import SwiftUI
 
 struct StickerSheet: View {
-    let session: EditorSession
+    @ObservedObject var session: EditorSession
     @Environment(\.dismiss) private var dismiss
     @State private var photoItem: PhotosPickerItem?
     @State private var names: [String] = []
@@ -13,7 +13,7 @@ struct StickerSheet: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
-                    Text("Make it personal.").font(.largeTitle.bold()).fontDesign(.rounded)
+                    Text("Make it personal.").font(.system(.largeTitle, design: .rounded, weight: .bold))
                     Text("Add a photo, a drawing, or a favorite character. Stickers stay inside the paintable body.")
                         .foregroundStyle(.secondary)
                     PhotosPicker(selection: $photoItem, matching: .images) {
@@ -37,7 +37,7 @@ struct StickerSheet: View {
                                 if let image = session.stickerLibrary.image(named: name) {
                                     Image(uiImage: image).resizable().scaledToFit()
                                         .frame(height: 100).frame(maxWidth: .infinity)
-                                        .padding(8).background(.quaternary, in: .rect(cornerRadius: 14))
+                                        .padding(8).background(.quaternary, in: RoundedRectangle(cornerRadius: 14))
                                 }
                             }.accessibilityLabel("Add saved photo sticker")
                         }

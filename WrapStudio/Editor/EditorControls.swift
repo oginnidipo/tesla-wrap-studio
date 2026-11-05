@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct EditorControls: View {
-    @Bindable var session: EditorSession
+    @ObservedObject var session: EditorSession
     @Binding var showingStickers: Bool
 
     var body: some View {
@@ -18,9 +18,9 @@ struct EditorControls: View {
                     .disabled(session.tool == .eraser)
                 Menu {
                     ForEach([CGFloat(5), 10, 22, 40], id: \.self) { width in
-                        Button("\(Int(width)) px", systemImage: session.inkWidth == width ? "checkmark" : "circle") {
+                        Button {
                             session.inkWidth = width
-                        }
+                        } label: { Label("\(Int(width)) px", systemImage: session.inkWidth == width ? "checkmark" : "circle") }
                     }
                 } label: {
                     Label("Brush width", systemImage: "lineweight").labelStyle(.iconOnly)
@@ -33,7 +33,7 @@ struct EditorControls: View {
                     HStack(spacing: 10) {
                         Button { session.setFill(nil) } label: {
                             Image(systemName: "nosign").frame(width: 34, height: 34)
-                                .background(Color(.secondarySystemGroupedBackground), in: .circle)
+                                .background(Color(.secondarySystemGroupedBackground), in: Circle())
                                 .overlay { Circle().strokeBorder(session.fillHex == nil ? Color.primary : .clear, lineWidth: 2) }
                         }.frame(minWidth: 44, minHeight: 44)
                         .accessibilityLabel("No body fill").accessibilityAddTraits(session.fillHex == nil ? .isSelected : [])
@@ -52,14 +52,15 @@ struct EditorControls: View {
                         }
                     }.padding(.vertical, 5)
                 }.scrollIndicators(.hidden)
-                Button("Stickers", systemImage: "photo.badge.plus") { showingStickers = true }
+                Button { showingStickers = true } label: { Label("Stickers", systemImage: "photo.badge.plus") }
                     .labelStyle(.iconOnly).frame(minWidth: 44, minHeight: 44)
                     .accessibilityIdentifier("addStickers")
             }
             if let selectedID = session.selectedStickerID {
-                Button("Remove selected sticker", systemImage: "trash", role: .destructive) {
+                Button(role: .destructive) {
                     session.deleteSticker(selectedID)
-                }.font(.footnote).frame(minHeight: 44)
+                } label: { Label("Remove selected sticker", systemImage: "trash") }
+                .font(.footnote).frame(minHeight: 44)
             }
         }
         .padding(.horizontal, 16).padding(.vertical, 12)

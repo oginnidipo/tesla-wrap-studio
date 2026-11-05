@@ -22,6 +22,7 @@ final class EditorFlowTests: XCTestCase {
             export.tap()
             XCTAssertTrue(app.navigationBars["Export wrap"].waitForExistence(timeout: 5))
             XCTAssertTrue(app.buttons["saveToFiles"].exists)
+            XCTAssertTrue(app.buttons["saveToPhotos"].exists)
             if name == "Model 3" { capture(app, name: "Export PNG") }
             app.buttons["Done"].tap()
             app.buttons["undo"].tap()
@@ -77,5 +78,28 @@ final class EditorFlowTests: XCTestCase {
         app.buttons["redo"].tap()
         XCTAssertTrue(app.buttons["exportPNG"].isEnabled)
         capture(app, name: "Paint stroke after rotation")
+    }
+
+    @MainActor func testSavePNGToPhotos() {
+        addUIInterruptionMonitor(withDescription: "Photos add permission") { alert in
+            let allow = alert.buttons["Allow"]
+            guard allow.exists else { return false }
+            allow.tap()
+            return true
+        }
+        let app = XCUIApplication()
+        app.launch()
+        app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Design a Model 3 wrap.")).firstMatch.tap()
+        app.buttons["fill-558BC7"].tap()
+        app.buttons["exportPNG"].tap()
+        XCTAssertTrue(app.buttons["saveToPhotos"].waitForExistence(timeout: 5))
+        app.buttons["saveToPhotos"].tap()
+        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+        let permission = springboard.alerts.firstMatch
+        if permission.waitForExistence(timeout: 5) { permission.buttons["Allow"].tap() }
+        else if app.alerts.buttons["Allow"].exists { app.alerts.buttons["Allow"].tap() }
+        XCTAssertTrue(app.staticTexts["photoSaveConfirmation"].waitForExistence(timeout: 10))
+        XCTAssertFalse(app.buttons["saveToPhotos"].isEnabled)
+        capture(app, name: "PNG saved to Photos")
     }
 }

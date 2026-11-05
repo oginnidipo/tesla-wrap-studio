@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PlacedStickerView: View {
-    let session: EditorSession
+    @ObservedObject var session: EditorSession
     let sticker: CanvasSticker
     let scale: CGFloat
     @GestureState private var translation = CGSize.zero
@@ -19,9 +19,9 @@ struct PlacedStickerView: View {
             }
             .overlay(alignment: .topTrailing) {
                 if selected {
-                    Button("Remove sticker", systemImage: "xmark.circle.fill") { session.deleteSticker(sticker.id) }
+                    Button { session.deleteSticker(sticker.id) } label: { Label("Remove sticker", systemImage: "xmark.circle.fill") }
                         .labelStyle(.iconOnly).font(.title2).tint(StudioStyle.accent)
-                        .frame(width: 44, height: 44).background(.white, in: .circle)
+                        .frame(width: 44, height: 44).background(.white, in: Circle())
                         .offset(x: 12, y: -12)
                 }
             }
@@ -35,10 +35,10 @@ struct PlacedStickerView: View {
                     session.moveSticker(sticker.id, by: CGSize(width: value.translation.width / scale,
                                                               height: value.translation.height / scale))
                 })
-            .simultaneousGesture(MagnifyGesture()
-                .updating($magnification) { value, state, _ in state = value.magnification }
+            .simultaneousGesture(MagnificationGesture()
+                .updating($magnification) { value, state, _ in state = value }
                 .onChanged { _ in session.selectedStickerID = sticker.id }
-                .onEnded { value in session.resizeSticker(sticker.id, magnification: value.magnification) })
+                .onEnded { value in session.resizeSticker(sticker.id, magnification: value) })
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Photo sticker")
             .accessibilityValue(selected ? "Selected" : "")
