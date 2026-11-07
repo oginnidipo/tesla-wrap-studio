@@ -27,6 +27,9 @@ import UIKit
         canvas.isOpaque = false
         canvas.drawingPolicy = .anyInput
         canvas.isScrollEnabled = false
+        // PKCanvasView is a scroll view; keep insets and offset fixed so the artwork never
+        // slides out of view when the canvas is resized (rotation, keyboard, split view).
+        canvas.contentInsetAdjustmentBehavior = .never
         canvas.overrideUserInterfaceStyle = .light
         canvas.tool = session.pencilTool(displayScale: 1)
         canvas.accessibilityLabel = "\(session.car.name) paint canvas"
@@ -58,6 +61,9 @@ import UIKit
         guard fit.width > 0 else { return }
         templateView.frame = fit
         canvas.frame = fit
+        canvas.contentInset = .zero
+        canvas.contentSize = fit.size
+        canvas.contentOffset = .zero
         let scale = fit.width / session.car.templateSize.width
         if scale != displayScale || appliedRevision != session.drawingRevision {
             isApplyingDrawing = true

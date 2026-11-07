@@ -1,3 +1,16 @@
+// Derives a vehicle's paint mask and overlay from Tesla's official wrap template.
+//
+//   swiftc -O scripts/derive-artwork.swift -o /tmp/derive-artwork
+//   /tmp/derive-artwork template.png <id>-mask.png <id>-overlay.png [reference-mask reference-overlay]
+//
+// Templates come from https://github.com/teslamotors/custom-wraps: transparent outside the
+// body, opaque white inside each panel, dark outlines between them.
+//   - Mask: the opaque light pixels (panel interiors), minus specks under 64 pixels.
+//   - Overlay: interiors transparent, everything else composited over white, except the
+//     anti-aliased outline pixels that face a panel, which stay translucent so paint
+//     blends into the outline.
+// Passing the bundled mask and overlay as references prints how many pixels differ; on the
+// three original vehicles the masks differ only in single edge pixels.
 import Foundation
 import CoreGraphics
 import ImageIO
@@ -30,7 +43,6 @@ func write(_ px: [UInt8], w: Int, h: Int, gray: Bool, to path: String) {
     CGImageDestinationFinalize(dest)
 }
 
-// usage: derive <template> <outMask> <outOverlay> [<referenceMask> <referenceOverlay>]
 let args = Array(CommandLine.arguments.dropFirst())
 let (w, h, t) = load(args[0])
 let n = w*h

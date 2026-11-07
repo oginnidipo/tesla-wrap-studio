@@ -12,7 +12,7 @@ struct VehicleCatalog: View {
                 Spacer()
                 Text("\(Car.allCases.count) body styles").font(.caption).foregroundStyle(.secondary)
             }
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 320), spacing: 14)], spacing: 14) {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 320), spacing: 14, alignment: .top)], spacing: 14) {
                 ForEach(VehicleFamily.allCases) { family in
                     FamilyCard(family: family, onSelect: onSelect)
                 }

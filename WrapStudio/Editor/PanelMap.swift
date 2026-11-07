@@ -14,6 +14,8 @@ final class PanelMap: Sendable {
 
     var panelCount: Int { panelPixels.count }
 
+    static let minimumPanelPixels = 64
+
     init?(mask: CGImage) {
         let width = mask.width, height = mask.height, count = width * height
         guard count > 0 else { return nil }
@@ -66,9 +68,19 @@ final class PanelMap: Sendable {
             }
         }
 
-        var panelPixels = [[Int32]](repeating: [], count: Int(panelCount))
+        var regions = [[Int32]](repeating: [], count: Int(panelCount))
         for index in 0..<count where labels[index] >= 0 {
-            panelPixels[Int(labels[index])].append(Int32(index))
+            regions[Int(labels[index])].append(Int32(index))
+        }
+        // Stray specks in a mask are not panels anyone can tap; renumber the rest densely.
+        var panelPixels: [[Int32]] = []
+        for region in regions {
+            if region.count < Self.minimumPanelPixels {
+                for index in region { labels[Int(index)] = -1 }
+            } else {
+                for index in region { labels[Int(index)] = Int32(panelPixels.count) }
+                panelPixels.append(region)
+            }
         }
         self.width = width
         self.height = height

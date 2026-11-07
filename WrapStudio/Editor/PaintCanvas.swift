@@ -14,6 +14,9 @@ struct PaintCanvas: View {
                                      tool: session.pencilTool(displayScale: scale),
                                      isDrawingEnabled: session.tool != .fill,
                                      fillHex: session.fillHex, panelFills: session.panelFills)
+                    // On the surface itself: an identifier on the whole canvas would also
+                    // replace the identifiers of the stickers and the bucket layer inside it.
+                    .accessibilityIdentifier("paintCanvas")
 
                 if session.tool == .fill {
                     Color.clear

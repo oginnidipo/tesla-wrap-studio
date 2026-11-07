@@ -44,6 +44,8 @@ struct HomeView: View {
         }
         .alert("Rename design", isPresented: Binding(get: { renaming != nil }, set: { if !$0 { renaming = nil } })) {
             TextField("Name", text: $renameText)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.words)
             Button("Cancel", role: .cancel) { renaming = nil }
             Button("Save") {
                 if let renaming { library.rename(renaming, to: renameText) }

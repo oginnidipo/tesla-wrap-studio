@@ -40,6 +40,8 @@ struct EditorView: View {
                 }
             }
         }
+        // The keyboard (rename alert, lettering) must not squeeze the canvas.
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         .background(Color(.systemGroupedBackground))
         .navigationBarTitleDisplayMode(.inline)
         .toolbar(.visible, for: .navigationBar)
@@ -52,6 +54,8 @@ struct EditorView: View {
         } message: { Text("This clears paint, fills, and stickers. You can undo it while this editor is open.") }
         .alert("Rename design", isPresented: $showingRename) {
             TextField("Name", text: $renameText)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.words)
             Button("Cancel", role: .cancel) {}
             Button("Save") { session.rename(to: renameText) }
         } message: { Text("This name is also used for the PNG you upload to your Tesla.") }
@@ -90,7 +94,6 @@ struct EditorView: View {
 
             PaintCanvas(session: session)
                 .padding(.horizontal, 12)
-                .accessibilityIdentifier("paintCanvas")
                 .overlay(alignment: .top) {
                     if let notice = session.notice {
                         Text(notice)
@@ -170,9 +173,12 @@ struct EditorView: View {
                 renameText = session.record.name
                 showingRename = true
             } label: {
+                // Toolbar items are laid out at their ideal width and never truncate, so long
+                // names are shortened here rather than sliding under the toolbar buttons.
                 VStack(spacing: 1) {
-                    Text(session.record.name).font(.headline).lineLimit(1)
-                    Text(session.car.fullName).font(.caption2).foregroundStyle(.secondary).lineLimit(1)
+                    Text(Self.shortened(session.record.name, to: 22)).font(.headline).lineLimit(1)
+                    Text(Self.shortened(session.car.fullName, to: 28)).font(.caption2).foregroundStyle(.secondary)
+                        .lineLimit(1)
                 }
                 .foregroundStyle(Color.primary)
             }
@@ -198,6 +204,10 @@ struct EditorView: View {
                     .disabled(!session.hasArtwork)
             } label: { Label("More", systemImage: "ellipsis.circle") }
         }
+    }
+
+    static func shortened(_ text: String, to length: Int) -> String {
+        text.count <= length ? text : text.prefix(length - 1).trimmingCharacters(in: .whitespaces) + "…"
     }
 
     private func prepareExport() {

@@ -26,4 +26,11 @@ struct CanvasGeometryTests {
         #expect(CanvasGeometry.clampedCenter(-10, limit: 1024) == 0)
         #expect(CanvasGeometry.clampedCenter(2000, limit: 1024) == 1024)
     }
+
+    @Test func anglesNormalizeIntoOneTurn() {
+        #expect(CanvasGeometry.normalizedAngle(0) == 0)
+        #expect(abs(CanvasGeometry.normalizedAngle(3 * .pi) - .pi) < 1e-9)
+        #expect(abs(CanvasGeometry.normalizedAngle(-.pi) - .pi) < 1e-9)
+        #expect(abs(CanvasGeometry.normalizedAngle(.pi / 2 + 4 * .pi) - .pi / 2) < 1e-9)
+    }
 }

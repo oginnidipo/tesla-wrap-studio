@@ -21,6 +21,8 @@ struct EditorControls: View {
         HStack(spacing: 4) {
             ForEach(PaintTool.allCases) { tool in
                 ToolButton(title: tool.title, symbol: tool.symbol, isSelected: session.tool == tool) {
+                    // Picking a tool means you're done arranging the selected sticker.
+                    session.selectedStickerID = nil
                     session.tool = tool
                     Haptics.select()
                 }

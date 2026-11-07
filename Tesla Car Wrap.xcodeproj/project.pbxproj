@@ -27,10 +27,11 @@
 		23E1D555CF7B87E513A7D854 /* DesignRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE21E0B68510D75F879D2FC /* DesignRecord.swift */; };
 		24D96BE1BB35A14710F8A4C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CF8030D549D6EE24C6E9C /* ContentView.swift */; };
 		2E21D83DED123177A3808D35 /* ct-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DB981D1B0335C5CED186C4 /* ct-mask.png */; };
+		2E83F2E0A7947043ABFD3EBD /* DesignStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377F32C1A51335B8019BD8CB /* DesignStoreTests.swift */; };
 		2EF4D0E54D403E81E3C86814 /* ms-2025p-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D05523C23D8875CD3E8B634C /* ms-2025p-mask.png */; };
-		30619042A8D7566F0DE5B1CA /* DesignRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E386214658D9A12B3DC70A2 /* DesignRepositoryTests.swift */; };
 		32543ABF4912F043659D3DBD /* m3-2024p-car.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAF990CC0A10762E2029E7A /* m3-2024p-car.png */; };
 		3A2837B17E793FFA9D061868 /* EditorControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C119373EAF4FCF3F3174B7FB /* EditorControls.swift */; };
+		3A5F25EF56BE09F847A4CFBD /* PanelMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347A5B24F80FF65520177413 /* PanelMapTests.swift */; };
 		430FD79E2A8B03E7D723A31D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A056F088808459ED305AC4A /* HomeView.swift */; };
 		4CF5E4631A43CB031A3632BF /* ms-2025p-template.png in Resources */ = {isa = PBXBuildFile; fileRef = A5645D42BCE041E489EFE23B /* ms-2025p-template.png */; };
 		4E09BBDC283A85BDBA29B98C /* ct-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */; };
@@ -40,6 +41,7 @@
 		555288A3C745A44B59A0736A /* StudioStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FAC2830EF650CB6D0A9E92 /* StudioStyle.swift */; };
 		558E543D7F3A7449FCAD37BA /* m3-2024p-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E40BF864B44921AE5C12C5 /* m3-2024p-mask.png */; };
 		5665E0899181F37864129293 /* StickerLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FEF1EB21DBEDFE74FAA1B /* StickerLibrary.swift */; };
+		5A50D15BCFF83DBF6761833E /* WrapDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D233FC377C648DCCF7F1C925 /* WrapDesignTests.swift */; };
 		5B148E5F52E3E500283A8C17 /* EditorFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084D8632401A111A83C40A2 /* EditorFlowTests.swift */; };
 		67154731DD00054AD75C09E4 /* EditorSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */; };
 		69C9A50840C0679869C173CB /* m3-2024-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E7D34F4DF42B91B29915C5 /* m3-2024-mask.png */; };
@@ -47,6 +49,7 @@
 		6B8D2F9A4DD4497BE1FD4348 /* PhotoLibraryWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93AA9A44D08672F121AD013 /* PhotoLibraryWriter.swift */; };
 		6C301987C7FCC5216FFC81FE /* my-l-template.png in Resources */ = {isa = PBXBuildFile; fileRef = DB76D5E01B800DF23CCCF7B9 /* my-l-template.png */; };
 		6C9CCCD33D913C22EC397D5B /* PhotoExportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F173F566028CBA1B5FDCDD9 /* PhotoExportModel.swift */; };
+		6D8F8A29C0A3EAF1D8072CF4 /* ScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F9B31DE9182A70AD53F78 /* ScreenshotTests.swift */; };
 		6E892CAFD76C3B175AE0C207 /* TemplateHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */; };
 		7490DCE655DB9BEFB22A7C28 /* my-2025p-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 106CB4F286EC0DF6AA4A25DF /* my-2025p-car.png */; };
 		769DAF83A3B01E5A39E13285 /* mx-2021-car.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2F9B7293DE108AC0E2C726 /* mx-2021-car.png */; };
@@ -56,6 +59,7 @@
 		7B01F8CEAB3240657526E21B /* PhotoExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7059B33E637AF2BD2094BDFB /* PhotoExportTests.swift */; };
 		80D4BA9E1B8545DABF51940F /* DesignStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833BF57297C5E6F392A075C /* DesignStore.swift */; };
 		8230ED68708C195A2BD868E4 /* ms-2025p-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A7CCA28398468019ADFA8F /* ms-2025p-overlay.png */; };
+		85B06D7401509365B7ABAD69 /* UITestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE6FB07365AFCC31295273 /* UITestSupport.swift */; };
 		86B54DFD3C1535DB40B3C7DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816DEE7E91B1805AE9BAE26C /* Assets.xcassets */; };
 		87FA2C27B2401A12EA0015E8 /* WrapStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */; };
 		896AAF6F30BD82D5368BCFAE /* m3-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */; };
@@ -65,6 +69,7 @@
 		93F50386B598BA537D87AED9 /* ExportPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212026656DACF7DED6F1E14 /* ExportPanel.swift */; };
 		9D1C75390CF294429572FDC0 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66960CC0171DD99F8C05463 /* EditorView.swift */; };
 		9ECF0A4D5BE33638EA6F52F8 /* m3-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1D885D454FDE1E76DEEEF7 /* m3-template.png */; };
+		A0D3F992B0A7359DDE6BC719 /* TextStickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C40766F83ED67F867C931 /* TextStickerTests.swift */; };
 		A135A630A626F18E6750559B /* WrapRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */; };
 		A241504A35580612BB251172 /* m3-2024-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 95685866E0C4AB9028AE559F /* m3-2024-template.png */; };
 		A3278A9BECE2E2F8A8B7476B /* my-2025-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8211537497406FD16A0642 /* my-2025-template.png */; };
@@ -133,7 +138,9 @@
 		3043E3165A220C349A6C4D9E /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
 		3055E913F7C5D7DB6FA2D8CD /* my-2025-premium-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-premium-car.png"; sourceTree = "<group>"; };
 		337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRendererTests.swift; sourceTree = "<group>"; };
+		347A5B24F80FF65520177413 /* PanelMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelMapTests.swift; sourceTree = "<group>"; };
 		35CBE4247549134571A6C7BC /* TemplatePaintSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePaintSurface.swift; sourceTree = "<group>"; };
+		377F32C1A51335B8019BD8CB /* DesignStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignStoreTests.swift; sourceTree = "<group>"; };
 		37E40BF864B44921AE5C12C5 /* m3-2024p-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024p-mask.png"; sourceTree = "<group>"; };
 		3A056F088808459ED305AC4A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapStudioApp.swift; sourceTree = "<group>"; };
@@ -141,12 +148,12 @@
 		4A854F5E2E3DC28F9D8AE31D /* mx-2021-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx-2021-template.png"; sourceTree = "<group>"; };
 		4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-mask.png"; sourceTree = "<group>"; };
 		4AEE2E6736F4B2129F375724 /* my-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-car.png"; sourceTree = "<group>"; };
-		4E386214658D9A12B3DC70A2 /* DesignRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignRepositoryTests.swift; sourceTree = "<group>"; };
 		4F8BC3FCF8DE86FC07F15FDA /* my-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-overlay.png"; sourceTree = "<group>"; };
 		52BBD8D079A3C38C161A2DFC /* CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTests.swift; sourceTree = "<group>"; };
 		5B1FBB049E8FE186F36E2182 /* VehicleCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCatalog.swift; sourceTree = "<group>"; };
 		5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-overlay.png"; sourceTree = "<group>"; };
 		5D1F7F552C0C5D98F2B4813A /* my-l-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-l-overlay.png"; sourceTree = "<group>"; };
+		657C40766F83ED67F867C931 /* TextStickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStickerTests.swift; sourceTree = "<group>"; };
 		65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateHostView.swift; sourceTree = "<group>"; };
 		6918C86ED149F53D285ADBD5 /* PlacedStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacedStickerView.swift; sourceTree = "<group>"; };
 		6A267A9D2AAC452CCD5095FD /* m3-2024p-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024p-template.png"; sourceTree = "<group>"; };
@@ -170,6 +177,7 @@
 		8C674D9277D085B2784D5B1C /* my-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-template.png"; sourceTree = "<group>"; };
 		8D63912EC9AA517B45734F8F /* my-2025-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-car.png"; sourceTree = "<group>"; };
 		911791F519CB9F2D0E806991 /* m3-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-car.png"; sourceTree = "<group>"; };
+		91CE6FB07365AFCC31295273 /* UITestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSupport.swift; sourceTree = "<group>"; };
 		938AC54E80C548DC53827DCE /* mx-2021-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx-2021-mask.png"; sourceTree = "<group>"; };
 		93A897B54673AA0D26FFDA09 /* WrapStudioUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WrapStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95685866E0C4AB9028AE559F /* m3-2024-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024-template.png"; sourceTree = "<group>"; };
@@ -190,10 +198,12 @@
 		C119373EAF4FCF3F3174B7FB /* EditorControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorControls.swift; sourceTree = "<group>"; };
 		C66960CC0171DD99F8C05463 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		C67E433B30B4F6F4412A91AF /* my-2025p-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025p-mask.png"; sourceTree = "<group>"; };
+		CB2F9B31DE9182A70AD53F78 /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
 		CD357B46B2C33F367BD9D6D1 /* my-2025-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-mask.png"; sourceTree = "<group>"; };
 		CD84A31C047FE9F83C5ECE59 /* my-2025p-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025p-overlay.png"; sourceTree = "<group>"; };
 		D05523C23D8875CD3E8B634C /* ms-2025p-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-2025p-mask.png"; sourceTree = "<group>"; };
 		D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSessionTests.swift; sourceTree = "<group>"; };
+		D233FC377C648DCCF7F1C925 /* WrapDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapDesignTests.swift; sourceTree = "<group>"; };
 		D62826A6BE3CD26AB6FAFA0F /* CanvasSticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasSticker.swift; sourceTree = "<group>"; };
 		D89037C23573B32EFB30EB2D /* my-2025-premium-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-premium-overlay.png"; sourceTree = "<group>"; };
 		DB76D5E01B800DF23CCCF7B9 /* my-l-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-l-template.png"; sourceTree = "<group>"; };
@@ -275,6 +285,7 @@
 				B5D0DF0D5F04DC2FC16B84F9 /* Export */,
 				C98A907F8CF59481AE1DB006 /* Fixtures */,
 				5AD21DCFECCB6E365B60FE42 /* Models */,
+				B83BAED0947D1B9669523B7F /* Stickers */,
 				7C4D6F26CB59F885F561CCCC /* Storage */,
 			);
 			path = WrapStudioTests;
@@ -304,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				52BBD8D079A3C38C161A2DFC /* CarTests.swift */,
+				D233FC377C648DCCF7F1C925 /* WrapDesignTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -311,7 +323,7 @@
 		7C4D6F26CB59F885F561CCCC /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				4E386214658D9A12B3DC70A2 /* DesignRepositoryTests.swift */,
+				377F32C1A51335B8019BD8CB /* DesignStoreTests.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -333,6 +345,14 @@
 				337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */,
 			);
 			path = Export;
+			sourceTree = "<group>";
+		};
+		B83BAED0947D1B9669523B7F /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				657C40766F83ED67F867C931 /* TextStickerTests.swift */,
+			);
+			path = Stickers;
 			sourceTree = "<group>";
 		};
 		BDEFB50B4436784751823DC1 /* Assets */ = {
@@ -416,6 +436,7 @@
 			children = (
 				2DD8425F0096C29C213DB882 /* CanvasGeometryTests.swift */,
 				D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */,
+				347A5B24F80FF65520177413 /* PanelMapTests.swift */,
 			);
 			path = Editor;
 			sourceTree = "<group>";
@@ -441,6 +462,8 @@
 			isa = PBXGroup;
 			children = (
 				A084D8632401A111A83C40A2 /* EditorFlowTests.swift */,
+				CB2F9B31DE9182A70AD53F78 /* ScreenshotTests.swift */,
+				91CE6FB07365AFCC31295273 /* UITestSupport.swift */,
 			);
 			path = WrapStudioUITests;
 			sourceTree = "<group>";
@@ -644,6 +667,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B148E5F52E3E500283A8C17 /* EditorFlowTests.swift in Sources */,
+				6D8F8A29C0A3EAF1D8072CF4 /* ScreenshotTests.swift in Sources */,
+				85B06D7401509365B7ABAD69 /* UITestSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,10 +678,13 @@
 			files = (
 				1733E58F9974A38C8D11C2DC /* CanvasGeometryTests.swift in Sources */,
 				E88BDFB8087FCB18E592FE19 /* CarTests.swift in Sources */,
-				30619042A8D7566F0DE5B1CA /* DesignRepositoryTests.swift in Sources */,
+				2E83F2E0A7947043ABFD3EBD /* DesignStoreTests.swift in Sources */,
 				67154731DD00054AD75C09E4 /* EditorSessionTests.swift in Sources */,
+				3A5F25EF56BE09F847A4CFBD /* PanelMapTests.swift in Sources */,
 				7B01F8CEAB3240657526E21B /* PhotoExportTests.swift in Sources */,
 				50F725AA9744C9969BEFC2E1 /* TestArtwork.swift in Sources */,
+				A0D3F992B0A7359DDE6BC719 /* TextStickerTests.swift in Sources */,
+				5A50D15BCFF83DBF6761833E /* WrapDesignTests.swift in Sources */,
 				A135A630A626F18E6750559B /* WrapRendererTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -737,7 +765,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tesla Car Wrap";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your wrap as a PNG in Photos so you can upload it from the Tesla app.";
@@ -747,7 +775,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.teslacarwrap;
 				PRODUCT_NAME = "Tesla Car Wrap";
 				SDKROOT = iphoneos;
@@ -762,7 +790,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Tesla Car Wrap";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your wrap as a PNG in Photos so you can upload it from the Tesla app.";
@@ -772,7 +800,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dipops.teslacarwrap;
 				PRODUCT_NAME = "Tesla Car Wrap";
 				SDKROOT = iphoneos;
