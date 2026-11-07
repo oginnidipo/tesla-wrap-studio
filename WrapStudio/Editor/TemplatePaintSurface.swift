@@ -5,7 +5,9 @@ struct TemplatePaintSurface: UIViewRepresentable {
     let session: EditorSession
     let revision: Int
     let tool: any PKTool
+    let isDrawingEnabled: Bool
     let fillHex: String?
+    let panelFills: [PanelFill]
 
     func makeUIView(context: Context) -> TemplateHostView {
         let view = TemplateHostView(session: session)
@@ -16,6 +18,7 @@ struct TemplatePaintSurface: UIViewRepresentable {
 
     func updateUIView(_ view: TemplateHostView, context: Context) {
         view.canvas.tool = tool
+        view.setDrawingEnabled(isDrawingEnabled)
         view.refreshArtwork()
         view.setNeedsLayout()
     }
@@ -27,6 +30,8 @@ struct TemplatePaintSurface: UIViewRepresentable {
         weak var host: TemplateHostView?
         private var isUsingTool = false
         private var pendingCommit: Task<Void, Never>?
+        /// First stroke index of the gesture(s) still waiting to be mirrored.
+        private var mirrorFrom: Int?
 
         init(session: EditorSession) { self.session = session }
 
@@ -34,6 +39,9 @@ struct TemplatePaintSurface: UIViewRepresentable {
             pendingCommit?.cancel()
             isUsingTool = true
             session.selectedStickerID = nil
+            if session.isMirroring, session.tool.drawsInk, mirrorFrom == nil {
+                mirrorFrom = session.drawing.strokes.count
+            }
             session.beginEdit()
         }
 
@@ -63,6 +71,10 @@ struct TemplatePaintSurface: UIViewRepresentable {
                 do { try await Task.sleep(for: .milliseconds(80)) } catch { return }
                 guard let self, let canvasView else { return }
                 self.synchronizeDrawing(canvasView)
+                if let start = self.mirrorFrom {
+                    self.mirrorFrom = nil
+                    self.session.mirrorStrokes(from: start)
+                }
                 self.session.finishEdit()
             }
         }

@@ -1,15 +1,19 @@
 import PencilKit
 import UIKit
 
-@MainActor final class TemplateHostView: UIView {
+@MainActor final class TemplateHostView: UIView, UIPencilInteractionDelegate {
+    private struct BackgroundKey: Equatable {
+        let fillHex: String?
+        let panelFills: [PanelFill]
+    }
+
     let canvas = DrawingCanvasView()
     let session: EditorSession
     private(set) var displayScale: CGFloat = 0
     private(set) var isApplyingDrawing = false
     private(set) var appliedDrawingData: Data?
     private let templateView = UIImageView()
-    private var renderedFill: String?
-    private var hasRenderedBackground = false
+    private var renderedBackground: BackgroundKey?
     private var appliedRevision = -1
 
     init(session: EditorSession) {
@@ -27,16 +31,25 @@ import UIKit
         canvas.tool = session.pencilTool(displayScale: 1)
         canvas.accessibilityLabel = "\(session.car.name) paint canvas"
         addSubview(canvas)
+        let pencil = UIPencilInteraction()
+        pencil.delegate = self
+        addInteraction(pencil)
         refreshArtwork()
     }
 
     required init?(coder: NSCoder) { nil }
 
     func refreshArtwork() {
-        guard !hasRenderedBackground || renderedFill != session.fillHex else { return }
-        templateView.image = try? WrapRenderer.background(car: session.car, fillHex: session.fillHex)
-        renderedFill = session.fillHex
-        hasRenderedBackground = true
+        let key = BackgroundKey(fillHex: session.fillHex, panelFills: session.panelFills)
+        guard key != renderedBackground else { return }
+        templateView.image = try? WrapRenderer.background(car: session.car, fillHex: key.fillHex, panelFills: key.panelFills)
+        renderedBackground = key
+    }
+
+    /// The bucket tool takes taps instead of strokes.
+    func setDrawingEnabled(_ enabled: Bool) {
+        canvas.drawingGestureRecognizer.isEnabled = enabled
+        canvas.isUserInteractionEnabled = enabled
     }
 
     override func layoutSubviews() {
@@ -54,5 +67,23 @@ import UIKit
             displayScale = scale
             appliedRevision = session.drawingRevision
         }
+    }
+
+    // MARK: Apple Pencil double-tap and squeeze
+
+    func pencilInteractionDidTap(_ interaction: UIPencilInteraction) {
+        handlePencilAction()
+    }
+
+    @available(iOS 17.5, *)
+    func pencilInteraction(_ interaction: UIPencilInteraction, didReceiveTap tap: UIPencilInteraction.Tap) {
+        handlePencilAction()
+    }
+
+    /// Honors the system setting; the palette and other actions are left to the system.
+    private func handlePencilAction() {
+        let action = UIPencilInteraction.preferredTapAction
+        guard action == .switchEraser || action == .switchPrevious else { return }
+        session.toggleEraser()
     }
 }

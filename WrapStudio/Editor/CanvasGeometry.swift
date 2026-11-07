@@ -22,4 +22,12 @@ enum CanvasGeometry {
     static func stickerSide(_ original: CGFloat, magnification: CGFloat) -> CGFloat {
         min(1024, max(40, original * magnification))
     }
+
+    /// An equivalent angle in (-π, π].
+    static func normalizedAngle(_ angle: Double) -> Double {
+        var value = angle.truncatingRemainder(dividingBy: 2 * .pi)
+        if value <= -.pi { value += 2 * .pi }
+        if value > .pi { value -= 2 * .pi }
+        return value
+    }
 }

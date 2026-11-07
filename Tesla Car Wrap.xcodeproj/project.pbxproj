@@ -9,52 +9,92 @@
 /* Begin PBXBuildFile section */
 		04025264655BDBAE8FC06539 /* PaintCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852B64B066493C5996CE268B /* PaintCanvas.swift */; };
 		0568D5F92FECC3BBDEF73337 /* PlacedStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918C86ED149F53D285ADBD5 /* PlacedStickerView.swift */; };
-		11E2612EB852004F72070193 /* ExportPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCABC592FE7FBDD8743490D /* ExportPanel.swift */; };
+		0882F3350C399FAF567021A0 /* ms-2025p-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 89D81ACDAD90B0E4A7F9FCB5 /* ms-2025p-car.png */; };
+		0A9EA686433A852E162B8C45 /* my-2025-premium-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 98D00CDD901753F4E2F66D35 /* my-2025-premium-mask.png */; };
+		0C2AA7495850CC5CD2446531 /* my-2025-premium-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 3055E913F7C5D7DB6FA2D8CD /* my-2025-premium-car.png */; };
+		100283150BB5570ED5BC312E /* my-2025p-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = C67E433B30B4F6F4412A91AF /* my-2025p-mask.png */; };
 		12A2BA959EC476CBA9E53829 /* DrawingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3043E3165A220C349A6C4D9E /* DrawingCanvasView.swift */; };
 		149A6CC3FE3B3CDE8E5DD7A0 /* PaintTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73EB1E1E09256604405ECDF /* PaintTool.swift */; };
 		15001A17A644AEC156A764FB /* m3-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBAD4D291EF5F84916E8B86 /* m3-overlay.png */; };
 		1733E58F9974A38C8D11C2DC /* CanvasGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8425F0096C29C213DB882 /* CanvasGeometryTests.swift */; };
+		187E2D8115CA8AD7F575ED9D /* mx-2021-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = E242EF1E4B8D660617CEF3BE /* mx-2021-overlay.png */; };
+		1A12951A037AF1B5738DD95F /* ms-2021-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 880B37985FFB3B2D66D1FBB3 /* ms-2021-overlay.png */; };
 		1BB8CD3D05EB1159454F3B5E /* WrapRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD53D1F658CE525FD4A6B5D /* WrapRenderer.swift */; };
-		1E5950324D4615EDFA2C6C9F /* CarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2CC0D25AE53749EABD07D1 /* CarPicker.swift */; };
+		1D2C6215B2BD3AC240A258BA /* mx-2021-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A854F5E2E3DC28F9D8AE31D /* mx-2021-template.png */; };
+		1D8E94997B7C2B7222D8D439 /* mx-2021-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 938AC54E80C548DC53827DCE /* mx-2021-mask.png */; };
 		204D28C7A133B35C93BCE3C4 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185429A427DB0CB36B0C0150 /* Car.swift */; };
 		20F939CFA0629C1650792D06 /* StickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89631A0569E27C2DCF55426 /* StickerSheet.swift */; };
+		23E1D555CF7B87E513A7D854 /* DesignRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE21E0B68510D75F879D2FC /* DesignRecord.swift */; };
 		24D96BE1BB35A14710F8A4C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8CF8030D549D6EE24C6E9C /* ContentView.swift */; };
 		2E21D83DED123177A3808D35 /* ct-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DB981D1B0335C5CED186C4 /* ct-mask.png */; };
+		2EF4D0E54D403E81E3C86814 /* ms-2025p-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D05523C23D8875CD3E8B634C /* ms-2025p-mask.png */; };
 		30619042A8D7566F0DE5B1CA /* DesignRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E386214658D9A12B3DC70A2 /* DesignRepositoryTests.swift */; };
+		32543ABF4912F043659D3DBD /* m3-2024p-car.png in Resources */ = {isa = PBXBuildFile; fileRef = FAAF990CC0A10762E2029E7A /* m3-2024p-car.png */; };
 		3A2837B17E793FFA9D061868 /* EditorControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C119373EAF4FCF3F3174B7FB /* EditorControls.swift */; };
-		44DF7FCA4D0FAA59E50E5E6F /* DesignRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D9A34A902C364D6BFA0A87 /* DesignRepository.swift */; };
+		430FD79E2A8B03E7D723A31D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A056F088808459ED305AC4A /* HomeView.swift */; };
+		4CF5E4631A43CB031A3632BF /* ms-2025p-template.png in Resources */ = {isa = PBXBuildFile; fileRef = A5645D42BCE041E489EFE23B /* ms-2025p-template.png */; };
 		4E09BBDC283A85BDBA29B98C /* ct-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */; };
 		50F725AA9744C9969BEFC2E1 /* TestArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E13EF0B2306390555737037 /* TestArtwork.swift */; };
+		518675AB0B3958C038F0B5F9 /* m3-2024p-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A267A9D2AAC452CCD5095FD /* m3-2024p-template.png */; };
+		537F410DC90811E720BF7CAD /* my-2025-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = CD357B46B2C33F367BD9D6D1 /* my-2025-mask.png */; };
 		555288A3C745A44B59A0736A /* StudioStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FAC2830EF650CB6D0A9E92 /* StudioStyle.swift */; };
+		558E543D7F3A7449FCAD37BA /* m3-2024p-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 37E40BF864B44921AE5C12C5 /* m3-2024p-mask.png */; };
 		5665E0899181F37864129293 /* StickerLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9FEF1EB21DBEDFE74FAA1B /* StickerLibrary.swift */; };
 		5B148E5F52E3E500283A8C17 /* EditorFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084D8632401A111A83C40A2 /* EditorFlowTests.swift */; };
-		608051887C51DF0F627548AE /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F0C550C1BD942AE20A5137 /* CanvasView.swift */; };
 		67154731DD00054AD75C09E4 /* EditorSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */; };
+		69C9A50840C0679869C173CB /* m3-2024-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E7D34F4DF42B91B29915C5 /* m3-2024-mask.png */; };
+		6A97D00E61ACB5A7F10AE815 /* my-l-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D1F7F552C0C5D98F2B4813A /* my-l-overlay.png */; };
 		6B8D2F9A4DD4497BE1FD4348 /* PhotoLibraryWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93AA9A44D08672F121AD013 /* PhotoLibraryWriter.swift */; };
+		6C301987C7FCC5216FFC81FE /* my-l-template.png in Resources */ = {isa = PBXBuildFile; fileRef = DB76D5E01B800DF23CCCF7B9 /* my-l-template.png */; };
 		6C9CCCD33D913C22EC397D5B /* PhotoExportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F173F566028CBA1B5FDCDD9 /* PhotoExportModel.swift */; };
 		6E892CAFD76C3B175AE0C207 /* TemplateHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */; };
+		7490DCE655DB9BEFB22A7C28 /* my-2025p-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 106CB4F286EC0DF6AA4A25DF /* my-2025p-car.png */; };
+		769DAF83A3B01E5A39E13285 /* mx-2021-car.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2F9B7293DE108AC0E2C726 /* mx-2021-car.png */; };
+		76ED6D1677BC3B18C6CCE5D6 /* ms-2021-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 292A68D1BC314F6A4E727BBF /* ms-2021-template.png */; };
+		775B81B30E083908CD102243 /* TextSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B73A458B0339EF77F6C903 /* TextSticker.swift */; };
 		784710BF9EC75EE1B7EE2EBC /* ct-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 81011632EF1936FE4556AFA8 /* ct-car.png */; };
 		7B01F8CEAB3240657526E21B /* PhotoExportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7059B33E637AF2BD2094BDFB /* PhotoExportTests.swift */; };
+		80D4BA9E1B8545DABF51940F /* DesignStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833BF57297C5E6F392A075C /* DesignStore.swift */; };
+		8230ED68708C195A2BD868E4 /* ms-2025p-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = F2A7CCA28398468019ADFA8F /* ms-2025p-overlay.png */; };
 		86B54DFD3C1535DB40B3C7DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816DEE7E91B1805AE9BAE26C /* Assets.xcassets */; };
 		87FA2C27B2401A12EA0015E8 /* WrapStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */; };
 		896AAF6F30BD82D5368BCFAE /* m3-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */; };
+		8D229EBD0D44B8B428FD986B /* m3-2024-car.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DA355A80F74986C99F17A6 /* m3-2024-car.png */; };
+		930776DF0676FD192466D5F0 /* my-l-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = FDF2AB852B65CE9660621179 /* my-l-mask.png */; };
+		93D04C2ECA5485942E7DF62D /* my-2025p-template.png in Resources */ = {isa = PBXBuildFile; fileRef = A135C754D9E019DF58968D04 /* my-2025p-template.png */; };
+		93F50386B598BA537D87AED9 /* ExportPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212026656DACF7DED6F1E14 /* ExportPanel.swift */; };
+		9D1C75390CF294429572FDC0 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66960CC0171DD99F8C05463 /* EditorView.swift */; };
 		9ECF0A4D5BE33638EA6F52F8 /* m3-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1D885D454FDE1E76DEEEF7 /* m3-template.png */; };
 		A135A630A626F18E6750559B /* WrapRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */; };
+		A241504A35580612BB251172 /* m3-2024-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 95685866E0C4AB9028AE559F /* m3-2024-template.png */; };
+		A3278A9BECE2E2F8A8B7476B /* my-2025-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C8211537497406FD16A0642 /* my-2025-template.png */; };
+		ACDBB23BB564C89BD29C886D /* m3-2024-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = B2E29B72C0A458EFC1C19048 /* m3-2024-overlay.png */; };
 		AF4C786C5C08A43417EC55A9 /* PNGDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F6860189D591D1F9A919D /* PNGDocument.swift */; };
+		B1A876B62FD95799E8516BC7 /* VehicleCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FBB049E8FE186F36E2182 /* VehicleCatalog.swift */; };
+		B1C9D2D7C1EE343FCEB1C1D6 /* m3-2024p-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6ED39054D041A9F5962054 /* m3-2024p-overlay.png */; };
+		B44991C68CDBF4D7F74DDE4C /* my-2025-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D63912EC9AA517B45734F8F /* my-2025-car.png */; };
 		B46651602E8BBF12B7F95CDA /* my-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C674D9277D085B2784D5B1C /* my-template.png */; };
 		BD01A911CBD0988F838AFBDB /* m3-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 911791F519CB9F2D0E806991 /* m3-car.png */; };
+		C20A9AEAD333174EFC322938 /* ms-2021-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA1336E48CC49549DB8B91 /* ms-2021-car.png */; };
+		C2738526D944499751FD5DDE /* my-2025-premium-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF6AFBB5E39DA1752A1ED40 /* my-2025-premium-template.png */; };
 		C6FAD680E75C4253F3671F46 /* CanvasSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62826A6BE3CD26AB6FAFA0F /* CanvasSticker.swift */; };
-		D36A4A66677BADCBDE575E51 /* CarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0E81551D8FF8F5F0AD53F9 /* CarCard.swift */; };
+		CC384A9B973D702944CB380D /* PanelMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E6E79F523100BBF1CAA56 /* PanelMap.swift */; };
+		CF4AFC080987E1B31E7294B8 /* DesignLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94571FE4CE502572EEE8B23 /* DesignLibrary.swift */; };
 		D5C5495E710B020C55704ABC /* WrapDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990BB1AA00286B0446C26C8D /* WrapDesign.swift */; };
+		D9E2445238C3FA094C71DF9B /* my-2025-premium-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = D89037C23573B32EFB30EB2D /* my-2025-premium-overlay.png */; };
 		DA6F602BF706CB53C5D7A739 /* my-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AEE2E6736F4B2129F375724 /* my-car.png */; };
+		DCB0C8E7F9C11F1E5A7D7588 /* my-2025-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3E711D1CDAD8D0F6E4002E /* my-2025-overlay.png */; };
 		DE45EF766FE9DDC610340485 /* ct-template.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC2ADBF3FCB70E9E0AEF6CD /* ct-template.png */; };
+		E82F0BE6C370E8C3A5C60756 /* my-2025p-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = CD84A31C047FE9F83C5ECE59 /* my-2025p-overlay.png */; };
 		E88BDFB8087FCB18E592FE19 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BBD8D079A3C38C161A2DFC /* CarTests.swift */; };
 		E95D8210938FD56A70B521B3 /* EditorSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40882BDE8824E9221D5CD971 /* EditorSession.swift */; };
 		EA32D41F3616D4FEBF85E7CE /* ExportedWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D969FADF9CD0738D76147C /* ExportedWrap.swift */; };
 		EA3DBCA1438145996275F351 /* TemplatePaintSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CBE4247549134571A6C7BC /* TemplatePaintSurface.swift */; };
+		EB1FBA2D9E9778D71EB92D0E /* my-l-car.png in Resources */ = {isa = PBXBuildFile; fileRef = FCC2FD447F3256667CB81FCE /* my-l-car.png */; };
 		EC42A42230865DF442501D36 /* StudioError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA79681BD5E3669DA812DA4 /* StudioError.swift */; };
 		F0BF050272A0ED9136558504 /* CanvasGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF7F4179CA28724BA6D7536 /* CanvasGeometry.swift */; };
 		F0D9EEB2390D993BDDAD2389 /* my-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F8BC3FCF8DE86FC07F15FDA /* my-overlay.png */; };
+		F16EBAD0F5B32B852AC965BC /* ms-2021-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC49CA88A3F26192E450E3 /* ms-2021-mask.png */; };
 		F40AAD81422AC180BC41D347 /* my-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = A75E3B443EF6AAC83ECC191B /* my-mask.png */; };
 /* End PBXBuildFile section */
 
@@ -78,56 +118,96 @@
 /* Begin PBXFileReference section */
 		0057CFE1F1592DF86EC57D6A /* WrapStudioTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WrapStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9FEF1EB21DBEDFE74FAA1B /* StickerLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerLibrary.swift; sourceTree = "<group>"; };
+		106CB4F286EC0DF6AA4A25DF /* my-2025p-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025p-car.png"; sourceTree = "<group>"; };
 		185429A427DB0CB36B0C0150 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		1BCABC592FE7FBDD8743490D /* ExportPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPanel.swift; sourceTree = "<group>"; };
+		1A3E711D1CDAD8D0F6E4002E /* my-2025-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-overlay.png"; sourceTree = "<group>"; };
+		1C8211537497406FD16A0642 /* my-2025-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-template.png"; sourceTree = "<group>"; };
 		1CBAD4D291EF5F84916E8B86 /* m3-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-overlay.png"; sourceTree = "<group>"; };
 		1F1D885D454FDE1E76DEEEF7 /* m3-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-template.png"; sourceTree = "<group>"; };
+		263E6E79F523100BBF1CAA56 /* PanelMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelMap.swift; sourceTree = "<group>"; };
+		292A68D1BC314F6A4E727BBF /* ms-2021-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-2021-template.png"; sourceTree = "<group>"; };
 		2DD8425F0096C29C213DB882 /* CanvasGeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasGeometryTests.swift; sourceTree = "<group>"; };
 		2DF7F4179CA28724BA6D7536 /* CanvasGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasGeometry.swift; sourceTree = "<group>"; };
 		2E13EF0B2306390555737037 /* TestArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArtwork.swift; sourceTree = "<group>"; };
 		2F173F566028CBA1B5FDCDD9 /* PhotoExportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoExportModel.swift; sourceTree = "<group>"; };
 		3043E3165A220C349A6C4D9E /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
+		3055E913F7C5D7DB6FA2D8CD /* my-2025-premium-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-premium-car.png"; sourceTree = "<group>"; };
 		337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRendererTests.swift; sourceTree = "<group>"; };
 		35CBE4247549134571A6C7BC /* TemplatePaintSurface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePaintSurface.swift; sourceTree = "<group>"; };
+		37E40BF864B44921AE5C12C5 /* m3-2024p-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024p-mask.png"; sourceTree = "<group>"; };
+		3A056F088808459ED305AC4A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapStudioApp.swift; sourceTree = "<group>"; };
 		40882BDE8824E9221D5CD971 /* EditorSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSession.swift; sourceTree = "<group>"; };
-		4A0E81551D8FF8F5F0AD53F9 /* CarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCard.swift; sourceTree = "<group>"; };
+		4A854F5E2E3DC28F9D8AE31D /* mx-2021-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx-2021-template.png"; sourceTree = "<group>"; };
 		4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-mask.png"; sourceTree = "<group>"; };
 		4AEE2E6736F4B2129F375724 /* my-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-car.png"; sourceTree = "<group>"; };
 		4E386214658D9A12B3DC70A2 /* DesignRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignRepositoryTests.swift; sourceTree = "<group>"; };
 		4F8BC3FCF8DE86FC07F15FDA /* my-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-overlay.png"; sourceTree = "<group>"; };
 		52BBD8D079A3C38C161A2DFC /* CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTests.swift; sourceTree = "<group>"; };
+		5B1FBB049E8FE186F36E2182 /* VehicleCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCatalog.swift; sourceTree = "<group>"; };
 		5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-overlay.png"; sourceTree = "<group>"; };
+		5D1F7F552C0C5D98F2B4813A /* my-l-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-l-overlay.png"; sourceTree = "<group>"; };
 		65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateHostView.swift; sourceTree = "<group>"; };
 		6918C86ED149F53D285ADBD5 /* PlacedStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacedStickerView.swift; sourceTree = "<group>"; };
+		6A267A9D2AAC452CCD5095FD /* m3-2024p-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024p-template.png"; sourceTree = "<group>"; };
+		6E6ED39054D041A9F5962054 /* m3-2024p-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024p-overlay.png"; sourceTree = "<group>"; };
+		6EF6AFBB5E39DA1752A1ED40 /* my-2025-premium-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-premium-template.png"; sourceTree = "<group>"; };
 		7059B33E637AF2BD2094BDFB /* PhotoExportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoExportTests.swift; sourceTree = "<group>"; };
 		70FAC2830EF650CB6D0A9E92 /* StudioStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioStyle.swift; sourceTree = "<group>"; };
-		74F0C550C1BD942AE20A5137 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		772F6860189D591D1F9A919D /* PNGDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNGDocument.swift; sourceTree = "<group>"; };
-		79D9A34A902C364D6BFA0A87 /* DesignRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignRepository.swift; sourceTree = "<group>"; };
+		7833BF57297C5E6F392A075C /* DesignStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignStore.swift; sourceTree = "<group>"; };
 		7A012488B9CE166598AF67C9 /* Tesla Car Wrap.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "Tesla Car Wrap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD53D1F658CE525FD4A6B5D /* WrapRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapRenderer.swift; sourceTree = "<group>"; };
 		7CC2ADBF3FCB70E9E0AEF6CD /* ct-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-template.png"; sourceTree = "<group>"; };
+		7EE21E0B68510D75F879D2FC /* DesignRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignRecord.swift; sourceTree = "<group>"; };
 		81011632EF1936FE4556AFA8 /* ct-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-car.png"; sourceTree = "<group>"; };
 		816DEE7E91B1805AE9BAE26C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DB981D1B0335C5CED186C4 /* ct-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ct-mask.png"; sourceTree = "<group>"; };
 		852B64B066493C5996CE268B /* PaintCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintCanvas.swift; sourceTree = "<group>"; };
+		880B37985FFB3B2D66D1FBB3 /* ms-2021-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-2021-overlay.png"; sourceTree = "<group>"; };
+		89D81ACDAD90B0E4A7F9FCB5 /* ms-2025p-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-2025p-car.png"; sourceTree = "<group>"; };
+		8BCC49CA88A3F26192E450E3 /* ms-2021-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-2021-mask.png"; sourceTree = "<group>"; };
 		8C674D9277D085B2784D5B1C /* my-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-template.png"; sourceTree = "<group>"; };
+		8D63912EC9AA517B45734F8F /* my-2025-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-car.png"; sourceTree = "<group>"; };
 		911791F519CB9F2D0E806991 /* m3-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-car.png"; sourceTree = "<group>"; };
+		938AC54E80C548DC53827DCE /* mx-2021-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx-2021-mask.png"; sourceTree = "<group>"; };
 		93A897B54673AA0D26FFDA09 /* WrapStudioUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = WrapStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95685866E0C4AB9028AE559F /* m3-2024-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024-template.png"; sourceTree = "<group>"; };
 		95D969FADF9CD0738D76147C /* ExportedWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportedWrap.swift; sourceTree = "<group>"; };
+		96E7D34F4DF42B91B29915C5 /* m3-2024-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024-mask.png"; sourceTree = "<group>"; };
+		98D00CDD901753F4E2F66D35 /* my-2025-premium-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-premium-mask.png"; sourceTree = "<group>"; };
 		990BB1AA00286B0446C26C8D /* WrapDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapDesign.swift; sourceTree = "<group>"; };
+		9CEA1336E48CC49549DB8B91 /* ms-2021-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-2021-car.png"; sourceTree = "<group>"; };
 		A084D8632401A111A83C40A2 /* EditorFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorFlowTests.swift; sourceTree = "<group>"; };
+		A135C754D9E019DF58968D04 /* my-2025p-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025p-template.png"; sourceTree = "<group>"; };
+		A5645D42BCE041E489EFE23B /* ms-2025p-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-2025p-template.png"; sourceTree = "<group>"; };
 		A75E3B443EF6AAC83ECC191B /* my-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-mask.png"; sourceTree = "<group>"; };
+		B2E29B72C0A458EFC1C19048 /* m3-2024-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024-overlay.png"; sourceTree = "<group>"; };
 		B73EB1E1E09256604405ECDF /* PaintTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintTool.swift; sourceTree = "<group>"; };
 		B93AA9A44D08672F121AD013 /* PhotoLibraryWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryWriter.swift; sourceTree = "<group>"; };
+		BE2F9B7293DE108AC0E2C726 /* mx-2021-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx-2021-car.png"; sourceTree = "<group>"; };
 		BE8CF8030D549D6EE24C6E9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C119373EAF4FCF3F3174B7FB /* EditorControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorControls.swift; sourceTree = "<group>"; };
+		C66960CC0171DD99F8C05463 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		C67E433B30B4F6F4412A91AF /* my-2025p-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025p-mask.png"; sourceTree = "<group>"; };
+		CD357B46B2C33F367BD9D6D1 /* my-2025-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-mask.png"; sourceTree = "<group>"; };
+		CD84A31C047FE9F83C5ECE59 /* my-2025p-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025p-overlay.png"; sourceTree = "<group>"; };
+		D05523C23D8875CD3E8B634C /* ms-2025p-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-2025p-mask.png"; sourceTree = "<group>"; };
 		D1A97DB6AF41AF5384544FDD /* EditorSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSessionTests.swift; sourceTree = "<group>"; };
 		D62826A6BE3CD26AB6FAFA0F /* CanvasSticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasSticker.swift; sourceTree = "<group>"; };
+		D89037C23573B32EFB30EB2D /* my-2025-premium-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-premium-overlay.png"; sourceTree = "<group>"; };
+		DB76D5E01B800DF23CCCF7B9 /* my-l-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-l-template.png"; sourceTree = "<group>"; };
 		DBA79681BD5E3669DA812DA4 /* StudioError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioError.swift; sourceTree = "<group>"; };
-		DE2CC0D25AE53749EABD07D1 /* CarPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPicker.swift; sourceTree = "<group>"; };
+		E0DA355A80F74986C99F17A6 /* m3-2024-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024-car.png"; sourceTree = "<group>"; };
+		E212026656DACF7DED6F1E14 /* ExportPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPanel.swift; sourceTree = "<group>"; };
+		E242EF1E4B8D660617CEF3BE /* mx-2021-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx-2021-overlay.png"; sourceTree = "<group>"; };
+		E2B73A458B0339EF77F6C903 /* TextSticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSticker.swift; sourceTree = "<group>"; };
 		E89631A0569E27C2DCF55426 /* StickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerSheet.swift; sourceTree = "<group>"; };
+		F2A7CCA28398468019ADFA8F /* ms-2025p-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ms-2025p-overlay.png"; sourceTree = "<group>"; };
+		F94571FE4CE502572EEE8B23 /* DesignLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignLibrary.swift; sourceTree = "<group>"; };
+		FAAF990CC0A10762E2029E7A /* m3-2024p-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024p-car.png"; sourceTree = "<group>"; };
+		FCC2FD447F3256667CB81FCE /* my-l-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-l-car.png"; sourceTree = "<group>"; };
+		FDF2AB852B65CE9660621179 /* my-l-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-l-mask.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -136,6 +216,7 @@
 			children = (
 				D62826A6BE3CD26AB6FAFA0F /* CanvasSticker.swift */,
 				185429A427DB0CB36B0C0150 /* Car.swift */,
+				7EE21E0B68510D75F879D2FC /* DesignRecord.swift */,
 				B73EB1E1E09256604405ECDF /* PaintTool.swift */,
 				DBA79681BD5E3669DA812DA4 /* StudioError.swift */,
 				990BB1AA00286B0446C26C8D /* WrapDesign.swift */,
@@ -147,16 +228,14 @@
 			isa = PBXGroup;
 			children = (
 				816DEE7E91B1805AE9BAE26C /* Assets.xcassets */,
-				74F0C550C1BD942AE20A5137 /* CanvasView.swift */,
 				BE8CF8030D549D6EE24C6E9C /* ContentView.swift */,
-				1BCABC592FE7FBDD8743490D /* ExportPanel.swift */,
 				3F846187A6E42D21B76C5D95 /* WrapStudioApp.swift */,
 				BDEFB50B4436784751823DC1 /* Assets */,
 				D66AD8603617B4C3394088B3 /* Design */,
 				1DB2CA0D33E2B41A031B4E29 /* Editor */,
 				CC577E671F0B29756E94829E /* Export */,
+				57B27B51D61D0B2468B2984B /* Gallery */,
 				03F67114E1E2FD1A14FCD95E /* Models */,
-				F55933221E3FBF6AF7009A24 /* Picker */,
 				0BA42CCF2BFB6C3CBE1EA817 /* Stickers */,
 				D16EFD1783AEF3610EC8B336 /* Storage */,
 			);
@@ -168,6 +247,7 @@
 			children = (
 				6918C86ED149F53D285ADBD5 /* PlacedStickerView.swift */,
 				E89631A0569E27C2DCF55426 /* StickerSheet.swift */,
+				E2B73A458B0339EF77F6C903 /* TextSticker.swift */,
 			);
 			path = Stickers;
 			sourceTree = "<group>";
@@ -179,7 +259,9 @@
 				3043E3165A220C349A6C4D9E /* DrawingCanvasView.swift */,
 				C119373EAF4FCF3F3174B7FB /* EditorControls.swift */,
 				40882BDE8824E9221D5CD971 /* EditorSession.swift */,
+				C66960CC0171DD99F8C05463 /* EditorView.swift */,
 				852B64B066493C5996CE268B /* PaintCanvas.swift */,
+				263E6E79F523100BBF1CAA56 /* PanelMap.swift */,
 				65BC46D64634643F4E2AFAF9 /* TemplateHostView.swift */,
 				35CBE4247549134571A6C7BC /* TemplatePaintSurface.swift */,
 			);
@@ -206,6 +288,16 @@
 				EC52E8AD88F71A3943ECD1AC /* WrapStudioUITests */,
 				8A7B65213A43A4EB3CF3E296 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		57B27B51D61D0B2468B2984B /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				F94571FE4CE502572EEE8B23 /* DesignLibrary.swift */,
+				3A056F088808459ED305AC4A /* HomeView.swift */,
+				5B1FBB049E8FE186F36E2182 /* VehicleCatalog.swift */,
+			);
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 		5AD21DCFECCB6E365B60FE42 /* Models */ = {
@@ -250,11 +342,47 @@
 				84DB981D1B0335C5CED186C4 /* ct-mask.png */,
 				5B6FBACB0FB521BA565AAA99 /* ct-overlay.png */,
 				7CC2ADBF3FCB70E9E0AEF6CD /* ct-template.png */,
+				E0DA355A80F74986C99F17A6 /* m3-2024-car.png */,
+				96E7D34F4DF42B91B29915C5 /* m3-2024-mask.png */,
+				B2E29B72C0A458EFC1C19048 /* m3-2024-overlay.png */,
+				95685866E0C4AB9028AE559F /* m3-2024-template.png */,
+				FAAF990CC0A10762E2029E7A /* m3-2024p-car.png */,
+				37E40BF864B44921AE5C12C5 /* m3-2024p-mask.png */,
+				6E6ED39054D041A9F5962054 /* m3-2024p-overlay.png */,
+				6A267A9D2AAC452CCD5095FD /* m3-2024p-template.png */,
 				911791F519CB9F2D0E806991 /* m3-car.png */,
 				4AAAAF5D8FCB9819E5919AF7 /* m3-mask.png */,
 				1CBAD4D291EF5F84916E8B86 /* m3-overlay.png */,
 				1F1D885D454FDE1E76DEEEF7 /* m3-template.png */,
+				9CEA1336E48CC49549DB8B91 /* ms-2021-car.png */,
+				8BCC49CA88A3F26192E450E3 /* ms-2021-mask.png */,
+				880B37985FFB3B2D66D1FBB3 /* ms-2021-overlay.png */,
+				292A68D1BC314F6A4E727BBF /* ms-2021-template.png */,
+				89D81ACDAD90B0E4A7F9FCB5 /* ms-2025p-car.png */,
+				D05523C23D8875CD3E8B634C /* ms-2025p-mask.png */,
+				F2A7CCA28398468019ADFA8F /* ms-2025p-overlay.png */,
+				A5645D42BCE041E489EFE23B /* ms-2025p-template.png */,
+				BE2F9B7293DE108AC0E2C726 /* mx-2021-car.png */,
+				938AC54E80C548DC53827DCE /* mx-2021-mask.png */,
+				E242EF1E4B8D660617CEF3BE /* mx-2021-overlay.png */,
+				4A854F5E2E3DC28F9D8AE31D /* mx-2021-template.png */,
+				8D63912EC9AA517B45734F8F /* my-2025-car.png */,
+				CD357B46B2C33F367BD9D6D1 /* my-2025-mask.png */,
+				1A3E711D1CDAD8D0F6E4002E /* my-2025-overlay.png */,
+				3055E913F7C5D7DB6FA2D8CD /* my-2025-premium-car.png */,
+				98D00CDD901753F4E2F66D35 /* my-2025-premium-mask.png */,
+				D89037C23573B32EFB30EB2D /* my-2025-premium-overlay.png */,
+				6EF6AFBB5E39DA1752A1ED40 /* my-2025-premium-template.png */,
+				1C8211537497406FD16A0642 /* my-2025-template.png */,
+				106CB4F286EC0DF6AA4A25DF /* my-2025p-car.png */,
+				C67E433B30B4F6F4412A91AF /* my-2025p-mask.png */,
+				CD84A31C047FE9F83C5ECE59 /* my-2025p-overlay.png */,
+				A135C754D9E019DF58968D04 /* my-2025p-template.png */,
 				4AEE2E6736F4B2129F375724 /* my-car.png */,
+				FCC2FD447F3256667CB81FCE /* my-l-car.png */,
+				FDF2AB852B65CE9660621179 /* my-l-mask.png */,
+				5D1F7F552C0C5D98F2B4813A /* my-l-overlay.png */,
+				DB76D5E01B800DF23CCCF7B9 /* my-l-template.png */,
 				A75E3B443EF6AAC83ECC191B /* my-mask.png */,
 				4F8BC3FCF8DE86FC07F15FDA /* my-overlay.png */,
 				8C674D9277D085B2784D5B1C /* my-template.png */,
@@ -274,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				95D969FADF9CD0738D76147C /* ExportedWrap.swift */,
+				E212026656DACF7DED6F1E14 /* ExportPanel.swift */,
 				2F173F566028CBA1B5FDCDD9 /* PhotoExportModel.swift */,
 				B93AA9A44D08672F121AD013 /* PhotoLibraryWriter.swift */,
 				772F6860189D591D1F9A919D /* PNGDocument.swift */,
@@ -294,7 +423,7 @@
 		D16EFD1783AEF3610EC8B336 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				79D9A34A902C364D6BFA0A87 /* DesignRepository.swift */,
+				7833BF57297C5E6F392A075C /* DesignStore.swift */,
 				0D9FEF1EB21DBEDFE74FAA1B /* StickerLibrary.swift */,
 			);
 			path = Storage;
@@ -314,15 +443,6 @@
 				A084D8632401A111A83C40A2 /* EditorFlowTests.swift */,
 			);
 			path = WrapStudioUITests;
-			sourceTree = "<group>";
-		};
-		F55933221E3FBF6AF7009A24 /* Picker */ = {
-			isa = PBXGroup;
-			children = (
-				4A0E81551D8FF8F5F0AD53F9 /* CarCard.swift */,
-				DE2CC0D25AE53749EABD07D1 /* CarPicker.swift */,
-			);
-			path = Picker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,11 +550,47 @@
 				2E21D83DED123177A3808D35 /* ct-mask.png in Resources */,
 				4E09BBDC283A85BDBA29B98C /* ct-overlay.png in Resources */,
 				DE45EF766FE9DDC610340485 /* ct-template.png in Resources */,
+				8D229EBD0D44B8B428FD986B /* m3-2024-car.png in Resources */,
+				69C9A50840C0679869C173CB /* m3-2024-mask.png in Resources */,
+				ACDBB23BB564C89BD29C886D /* m3-2024-overlay.png in Resources */,
+				A241504A35580612BB251172 /* m3-2024-template.png in Resources */,
+				32543ABF4912F043659D3DBD /* m3-2024p-car.png in Resources */,
+				558E543D7F3A7449FCAD37BA /* m3-2024p-mask.png in Resources */,
+				B1C9D2D7C1EE343FCEB1C1D6 /* m3-2024p-overlay.png in Resources */,
+				518675AB0B3958C038F0B5F9 /* m3-2024p-template.png in Resources */,
 				BD01A911CBD0988F838AFBDB /* m3-car.png in Resources */,
 				896AAF6F30BD82D5368BCFAE /* m3-mask.png in Resources */,
 				15001A17A644AEC156A764FB /* m3-overlay.png in Resources */,
 				9ECF0A4D5BE33638EA6F52F8 /* m3-template.png in Resources */,
+				C20A9AEAD333174EFC322938 /* ms-2021-car.png in Resources */,
+				F16EBAD0F5B32B852AC965BC /* ms-2021-mask.png in Resources */,
+				1A12951A037AF1B5738DD95F /* ms-2021-overlay.png in Resources */,
+				76ED6D1677BC3B18C6CCE5D6 /* ms-2021-template.png in Resources */,
+				0882F3350C399FAF567021A0 /* ms-2025p-car.png in Resources */,
+				2EF4D0E54D403E81E3C86814 /* ms-2025p-mask.png in Resources */,
+				8230ED68708C195A2BD868E4 /* ms-2025p-overlay.png in Resources */,
+				4CF5E4631A43CB031A3632BF /* ms-2025p-template.png in Resources */,
+				769DAF83A3B01E5A39E13285 /* mx-2021-car.png in Resources */,
+				1D8E94997B7C2B7222D8D439 /* mx-2021-mask.png in Resources */,
+				187E2D8115CA8AD7F575ED9D /* mx-2021-overlay.png in Resources */,
+				1D2C6215B2BD3AC240A258BA /* mx-2021-template.png in Resources */,
+				B44991C68CDBF4D7F74DDE4C /* my-2025-car.png in Resources */,
+				537F410DC90811E720BF7CAD /* my-2025-mask.png in Resources */,
+				DCB0C8E7F9C11F1E5A7D7588 /* my-2025-overlay.png in Resources */,
+				0C2AA7495850CC5CD2446531 /* my-2025-premium-car.png in Resources */,
+				0A9EA686433A852E162B8C45 /* my-2025-premium-mask.png in Resources */,
+				D9E2445238C3FA094C71DF9B /* my-2025-premium-overlay.png in Resources */,
+				C2738526D944499751FD5DDE /* my-2025-premium-template.png in Resources */,
+				A3278A9BECE2E2F8A8B7476B /* my-2025-template.png in Resources */,
+				7490DCE655DB9BEFB22A7C28 /* my-2025p-car.png in Resources */,
+				100283150BB5570ED5BC312E /* my-2025p-mask.png in Resources */,
+				E82F0BE6C370E8C3A5C60756 /* my-2025p-overlay.png in Resources */,
+				93D04C2ECA5485942E7DF62D /* my-2025p-template.png in Resources */,
 				DA6F602BF706CB53C5D7A739 /* my-car.png in Resources */,
+				EB1FBA2D9E9778D71EB92D0E /* my-l-car.png in Resources */,
+				930776DF0676FD192466D5F0 /* my-l-mask.png in Resources */,
+				6A97D00E61ACB5A7F10AE815 /* my-l-overlay.png in Resources */,
+				6C301987C7FCC5216FFC81FE /* my-l-template.png in Resources */,
 				F40AAD81422AC180BC41D347 /* my-mask.png in Resources */,
 				F0D9EEB2390D993BDDAD2389 /* my-overlay.png in Resources */,
 				B46651602E8BBF12B7F95CDA /* my-template.png in Resources */,
@@ -450,20 +606,22 @@
 			files = (
 				F0BF050272A0ED9136558504 /* CanvasGeometry.swift in Sources */,
 				C6FAD680E75C4253F3671F46 /* CanvasSticker.swift in Sources */,
-				608051887C51DF0F627548AE /* CanvasView.swift in Sources */,
 				204D28C7A133B35C93BCE3C4 /* Car.swift in Sources */,
-				D36A4A66677BADCBDE575E51 /* CarCard.swift in Sources */,
-				1E5950324D4615EDFA2C6C9F /* CarPicker.swift in Sources */,
 				24D96BE1BB35A14710F8A4C8 /* ContentView.swift in Sources */,
-				44DF7FCA4D0FAA59E50E5E6F /* DesignRepository.swift in Sources */,
+				CF4AFC080987E1B31E7294B8 /* DesignLibrary.swift in Sources */,
+				23E1D555CF7B87E513A7D854 /* DesignRecord.swift in Sources */,
+				80D4BA9E1B8545DABF51940F /* DesignStore.swift in Sources */,
 				12A2BA959EC476CBA9E53829 /* DrawingCanvasView.swift in Sources */,
 				3A2837B17E793FFA9D061868 /* EditorControls.swift in Sources */,
 				E95D8210938FD56A70B521B3 /* EditorSession.swift in Sources */,
-				11E2612EB852004F72070193 /* ExportPanel.swift in Sources */,
+				9D1C75390CF294429572FDC0 /* EditorView.swift in Sources */,
+				93F50386B598BA537D87AED9 /* ExportPanel.swift in Sources */,
 				EA32D41F3616D4FEBF85E7CE /* ExportedWrap.swift in Sources */,
+				430FD79E2A8B03E7D723A31D /* HomeView.swift in Sources */,
 				AF4C786C5C08A43417EC55A9 /* PNGDocument.swift in Sources */,
 				04025264655BDBAE8FC06539 /* PaintCanvas.swift in Sources */,
 				149A6CC3FE3B3CDE8E5DD7A0 /* PaintTool.swift in Sources */,
+				CC384A9B973D702944CB380D /* PanelMap.swift in Sources */,
 				6C9CCCD33D913C22EC397D5B /* PhotoExportModel.swift in Sources */,
 				6B8D2F9A4DD4497BE1FD4348 /* PhotoLibraryWriter.swift in Sources */,
 				0568D5F92FECC3BBDEF73337 /* PlacedStickerView.swift in Sources */,
@@ -473,6 +631,8 @@
 				555288A3C745A44B59A0736A /* StudioStyle.swift in Sources */,
 				6E892CAFD76C3B175AE0C207 /* TemplateHostView.swift in Sources */,
 				EA3DBCA1438145996275F351 /* TemplatePaintSurface.swift in Sources */,
+				775B81B30E083908CD102243 /* TextSticker.swift in Sources */,
+				B1A876B62FD95799E8516BC7 /* VehicleCatalog.swift in Sources */,
 				D5C5495E710B020C55704ABC /* WrapDesign.swift in Sources */,
 				1BB8CD3D05EB1159454F3B5E /* WrapRenderer.swift in Sources */,
 				87FA2C27B2401A12EA0015E8 /* WrapStudioApp.swift in Sources */,

@@ -8,28 +8,32 @@ struct StickerSheet: View {
     @State private var names: [String] = []
     @State private var isImporting = false
     @State private var errorMessage: String?
+    @State private var removing: String?
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
                     Text("Make it personal.").font(.system(.largeTitle, design: .rounded, weight: .bold))
-                    Text("Add a photo, a drawing, or a favorite character. Stickers stay inside the paintable body.")
+                    Text("Add a photo, a logo, or a favorite character. Stickers stay inside the paintable body, and you can rotate, flip, or mirror them to the other side.")
                         .foregroundStyle(.secondary)
                     PhotosPicker(selection: $photoItem, matching: .images) {
                         Label("Import a photo", systemImage: "photo.badge.plus")
                             .font(.headline).frame(maxWidth: .infinity).padding(.vertical, 6)
                     }
                     .buttonStyle(.borderedProminent).controlSize(.large).disabled(isImporting)
+                    .accessibilityIdentifier("importPhoto")
                     if isImporting { ProgressView("Importing photo…").frame(maxWidth: .infinity) }
                     if let errorMessage { Text(errorMessage).font(.callout).foregroundStyle(.red) }
                     if names.isEmpty && !isImporting {
                         VStack(spacing: 12) {
                             Image(systemName: "photo.on.rectangle.angled").font(.largeTitle)
                             Text("Your sticker collection starts here.").font(.headline)
-                            Text("Imported photos are kept on this device.").font(.footnote)
+                            Text("Imported photos and lettering are kept on this device.").font(.footnote)
                         }
                         .foregroundStyle(.secondary).frame(maxWidth: .infinity).padding(.vertical, 40)
+                    } else if !names.isEmpty {
+                        Text("YOUR COLLECTION").font(.caption.weight(.bold)).tracking(1.5)
                     }
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 96))], spacing: 16) {
                         ForEach(names, id: \.self) { name in
@@ -39,7 +43,13 @@ struct StickerSheet: View {
                                         .frame(height: 100).frame(maxWidth: .infinity)
                                         .padding(8).background(.quaternary, in: RoundedRectangle(cornerRadius: 14))
                                 }
-                            }.accessibilityLabel("Add saved photo sticker")
+                            }
+                            .accessibilityLabel(name.hasPrefix("tx-") ? "Add saved text sticker" : "Add saved photo sticker")
+                            .contextMenu {
+                                Button(role: .destructive) { removing = name } label: {
+                                    Label("Remove from collection", systemImage: "trash")
+                                }
+                            }
                         }
                     }
                 }.padding(22)
@@ -48,6 +58,14 @@ struct StickerSheet: View {
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
             .task { names = session.stickerLibrary.names() }
             .task(id: photoItem) { await importPhoto() }
+            .confirmationDialog("Remove this sticker from your collection?",
+                                isPresented: Binding(get: { removing != nil }, set: { if !$0 { removing = nil } }),
+                                titleVisibility: .visible, presenting: removing) { name in
+                Button("Remove", role: .destructive) {
+                    try? session.stickerLibrary.remove(named: name)
+                    names = session.stickerLibrary.names()
+                }
+            } message: { _ in Text("Designs that use it will no longer show it.") }
         }
     }
 

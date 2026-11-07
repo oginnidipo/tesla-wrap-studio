@@ -6,51 +6,109 @@ struct PlacedStickerView: View {
     let scale: CGFloat
     @GestureState private var translation = CGSize.zero
     @GestureState private var magnification: CGFloat = 1
+    @GestureState private var twist = Angle.zero
 
     private var selected: Bool { session.selectedStickerID == sticker.id }
+    private var side: CGFloat { CanvasGeometry.stickerSide(sticker.side, magnification: magnification) * scale }
+    private var image: UIImage { session.stickerLibrary.image(named: sticker.fileName) ?? UIImage() }
+    private var position: CGPoint {
+        CGPoint(x: sticker.x * scale + translation.width, y: sticker.y * scale + translation.height)
+    }
 
     var body: some View {
-        Image(uiImage: session.stickerLibrary.image(named: sticker.fileName) ?? UIImage())
-            .resizable().scaledToFit()
-            .frame(width: CanvasGeometry.stickerSide(sticker.side, magnification: magnification) * scale,
-                   height: CanvasGeometry.stickerSide(sticker.side, magnification: magnification) * scale)
-            .overlay {
-                if selected { RoundedRectangle(cornerRadius: 6).strokeBorder(StudioStyle.accent, lineWidth: 2) }
+        artwork
+            .rotationEffect(.radians(sticker.rotation) + twist)
+            .position(position)
+            .onTapGesture {
+                session.selectedStickerID = selected ? nil : sticker.id
+                Haptics.select()
             }
-            .overlay(alignment: .topTrailing) {
+            .gesture(drag)
+            .simultaneousGesture(pinchAndTwist)
+            .modifier(StickerAccessibility(session: session, sticker: sticker, selected: selected))
+    }
+
+    private var artwork: some View {
+        // Fit inside the square frame used for export, so the selection hugs the image.
+        let fitted = CanvasGeometry.fitRect(template: image.size, in: CGSize(width: side, height: side)).size
+        return Image(uiImage: image)
+            .resizable()
+            .frame(width: max(fitted.width, 1), height: max(fitted.height, 1))
+            .scaleEffect(x: sticker.isFlipped ? -1 : 1, y: 1)
+            .overlay {
                 if selected {
-                    Button { session.deleteSticker(sticker.id) } label: { Label("Remove sticker", systemImage: "xmark.circle.fill") }
-                        .labelStyle(.iconOnly).font(.title2).tint(StudioStyle.accent)
-                        .frame(width: 44, height: 44).background(.white, in: Circle())
-                        .offset(x: 12, y: -12)
+                    RoundedRectangle(cornerRadius: 6)
+                        .strokeBorder(StudioStyle.accent, style: StrokeStyle(lineWidth: 2, dash: [7, 4]))
+                        .padding(-6)
                 }
             }
-            .position(x: sticker.x * scale + translation.width, y: sticker.y * scale + translation.height)
-            .onTapGesture { session.selectedStickerID = selected ? nil : sticker.id }
-            .gesture(DragGesture(coordinateSpace: .named("wrapSurface"))
-                .updating($translation) { value, state, _ in state = value.translation }
-                .onChanged { _ in session.selectedStickerID = sticker.id }
-                .onEnded { value in
-                    guard scale > 0 else { return }
-                    session.moveSticker(sticker.id, by: CGSize(width: value.translation.width / scale,
-                                                              height: value.translation.height / scale))
-                })
-            .simultaneousGesture(MagnificationGesture()
-                .updating($magnification) { value, state, _ in state = value }
-                .onChanged { _ in session.selectedStickerID = sticker.id }
-                .onEnded { value in session.resizeSticker(sticker.id, magnification: value) })
-            .accessibilityElement(children: .ignore)
-            .accessibilityLabel("Photo sticker")
-            .accessibilityValue(selected ? "Selected" : "")
-            .accessibilityAddTraits(.isButton)
-            .accessibilityAction { session.selectedStickerID = sticker.id }
-            .accessibilityAction(named: "Remove") { session.deleteSticker(sticker.id) }
-            .accessibilityAction(named: "Move left") { session.moveSticker(sticker.id, by: CGSize(width: -25, height: 0)) }
-            .accessibilityAction(named: "Move right") { session.moveSticker(sticker.id, by: CGSize(width: 25, height: 0)) }
-            .accessibilityAction(named: "Move up") { session.moveSticker(sticker.id, by: CGSize(width: 0, height: -25)) }
-            .accessibilityAction(named: "Move down") { session.moveSticker(sticker.id, by: CGSize(width: 0, height: 25)) }
-            .accessibilityAdjustableAction { direction in
-                session.resizeSticker(sticker.id, magnification: direction == .increment ? 1.1 : 0.9)
+    }
+
+    private var drag: some Gesture {
+        DragGesture(coordinateSpace: .named("wrapSurface"))
+            .updating($translation) { value, state, _ in state = value.translation }
+            .onChanged { _ in if !selected { session.selectedStickerID = sticker.id } }
+            .onEnded { value in
+                guard scale > 0 else { return }
+                session.moveSticker(sticker.id, by: CGSize(width: value.translation.width / scale,
+                                                          height: value.translation.height / scale))
             }
+    }
+
+    private var pinchAndTwist: some Gesture {
+        MagnificationGesture().simultaneously(with: RotationGesture())
+            .updating($magnification) { value, state, _ in state = value.first ?? 1 }
+            .updating($twist) { value, state, _ in state = value.second ?? .zero }
+            .onChanged { _ in if !selected { session.selectedStickerID = sticker.id } }
+            .onEnded { value in
+                session.transformSticker(sticker.id, magnification: value.first ?? 1,
+                                         rotation: (value.second ?? .zero).radians)
+            }
+    }
+}
+
+private struct StickerAccessibility: ViewModifier {
+    let session: EditorSession
+    let sticker: CanvasSticker
+    let selected: Bool
+
+    private var label: Text { Text(sticker.fileName.hasPrefix("tx-") ? "Text sticker" : "Photo sticker") }
+    private var value: Text { Text(selected ? "Selected" : "") }
+
+    func body(content: Content) -> some View {
+        let described = content
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel(label)
+            .accessibilityValue(value)
+            .accessibilityAddTraits(.isButton)
+            .accessibilityIdentifier("sticker")
+        return described
+            .accessibilityAction { select() }
+            .accessibilityActions { actions }
+            .accessibilityAdjustableAction(resize)
+    }
+
+    @ViewBuilder private var actions: some View {
+        Button("Remove") { session.deleteSticker(sticker.id) }
+        Button("Move left") { move(-25, 0) }
+        Button("Move right") { move(25, 0) }
+        Button("Move up") { move(0, -25) }
+        Button("Move down") { move(0, 25) }
+        Button("Rotate left") { rotate(-.pi / 12) }
+        Button("Rotate right") { rotate(.pi / 12) }
+        Button("Flip") { session.flipSticker(sticker.id) }
+        Button("Mirror to other side") { session.mirrorCopySticker(sticker.id) }
+    }
+
+    private func select() { session.selectedStickerID = sticker.id }
+
+    private func rotate(_ angle: Double) { session.rotateSticker(sticker.id, by: angle) }
+
+    private func resize(_ direction: AccessibilityAdjustmentDirection) {
+        session.resizeSticker(sticker.id, magnification: direction == .increment ? 1.1 : 0.9)
+    }
+
+    private func move(_ dx: CGFloat, _ dy: CGFloat) {
+        session.moveSticker(sticker.id, by: CGSize(width: dx, height: dy))
     }
 }
