@@ -57,6 +57,8 @@ import SwiftUI
     var onThumbnailChange: ((UUID, Data) -> Void)?
 
     var car: Car { record.car }
+    /// Painting must not touch a draft that cannot be saved or needs migration first.
+    var acceptsDrawing: Bool { canPersist && !needsLegacyMigration }
 
     private let store: DesignStore
     private var undoHistory: [WrapDesign] = []
@@ -144,7 +146,12 @@ import SwiftUI
     }
 
     func updateDrawing(_ newDrawing: PKDrawing) {
+        guard let current = try? PKDrawing(data: drawing.dataRepresentation()),
+              current.dataRepresentation() != newDrawing.dataRepresentation() else { return }
         drawing = newDrawing
+        // Every drawing mutation must reach the paint surface: the host view re-applies
+        // session artwork only when the revision changes, so bump it unconditionally here.
+        drawingRevision += 1
         scheduleSave()
     }
 
@@ -333,16 +340,22 @@ import SwiftUI
 
     func undo() {
         finishPendingEdit()
-        guard let previous = undoHistory.popLast() else { return }
-        redoHistory.append(snapshot)
-        restore(previous)
+        guard let previous = undoHistory.last else { return }
+        let current = snapshot            // captured before restoring, or redo loses it
+        guard safeRestore(previous) else { return }
+        undoHistory.removeLast()          // only popped after a successful restore
+        redoHistory.append(current)
+        updateHistoryStatus()
     }
 
     func redo() {
         finishPendingEdit()
-        guard let next = redoHistory.popLast() else { return }
-        undoHistory.append(snapshot)
-        restore(next)
+        guard let next = redoHistory.last else { return }
+        let current = snapshot
+        guard safeRestore(next) else { return }
+        redoHistory.removeLast()
+        undoHistory.append(current)
+        updateHistoryStatus()
     }
 
     // MARK: Design
@@ -377,7 +390,10 @@ import SwiftUI
 
     func persistNow() {
         saveTask?.cancel()
-        guard canPersist, !needsLegacyMigration, hasUnsavedChanges else { return }
+        guard canPersist, hasUnsavedChanges else { return }
+        // A design that still needs the one-time canvas migration must not be saved in
+        // its pre-migration coordinates; migration happens on the first laid-out canvas.
+        guard !needsLegacyMigration else { return }
         do {
             record = try store.save(snapshot, for: record)
             hasUnsavedChanges = false
@@ -419,16 +435,18 @@ import SwiftUI
         if editStart != nil { finishEdit() }
     }
 
-    private func restore(_ design: WrapDesign) {
-        guard let restored = try? PKDrawing(data: design.drawingData) else { return }
+    /// Applies a stored snapshot. Returns false without touching any state when the
+    /// bitmap cannot be decoded, so the history entry stays available for a later try.
+    private func safeRestore(_ design: WrapDesign) -> Bool {
+        guard let restored = try? PKDrawing(data: design.drawingData) else { return false }
         drawing = restored
         stickers = design.stickers
         fillHex = design.fillHex
         panelFills = design.panelFills
         if let selectedStickerID, !stickers.contains(where: { $0.id == selectedStickerID }) { self.selectedStickerID = nil }
         drawingRevision += 1
-        updateHistoryStatus()
         scheduleSave()
+        return true
     }
 
     private func updateHistoryStatus() {

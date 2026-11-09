@@ -12,7 +12,7 @@ struct PaintCanvas: View {
             ZStack {
                 TemplatePaintSurface(session: session, revision: session.drawingRevision,
                                      tool: session.pencilTool(displayScale: scale),
-                                     isDrawingEnabled: session.tool != .fill,
+                                     isDrawingEnabled: session.tool != .fill && session.acceptsDrawing,
                                      fillHex: session.fillHex, panelFills: session.panelFills)
                     // On the surface itself: an identifier on the whole canvas would also
                     // replace the identifiers of the stickers and the bucket layer inside it.
@@ -36,8 +36,14 @@ struct PaintCanvas: View {
                 }
 
                 ZStack {
-                    ForEach(session.stickers) { sticker in
-                        PlacedStickerView(session: session, sticker: sticker, scale: scale)
+                    if session.acceptsDrawing {
+                        ForEach(session.stickers) { sticker in
+                            PlacedStickerView(session: session, sticker: sticker, scale: scale)
+                        }
+                    } else {
+                        ForEach(session.stickers) { sticker in
+                            PlacedStickerView(session: session, sticker: sticker, scale: scale).allowsHitTesting(false)
+                        }
                     }
                 }
                 .frame(width: rect.width, height: rect.height)

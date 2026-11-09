@@ -85,6 +85,7 @@
 		C6FAD680E75C4253F3671F46 /* CanvasSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62826A6BE3CD26AB6FAFA0F /* CanvasSticker.swift */; };
 		CC384A9B973D702944CB380D /* PanelMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263E6E79F523100BBF1CAA56 /* PanelMap.swift */; };
 		CF4AFC080987E1B31E7294B8 /* DesignLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94571FE4CE502572EEE8B23 /* DesignLibrary.swift */; };
+		D3986CD7A3A2AFF6F9A7A7F1 /* CarAssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6D9FB13858C2E1FA48D9B9 /* CarAssetTests.swift */; };
 		D5C5495E710B020C55704ABC /* WrapDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990BB1AA00286B0446C26C8D /* WrapDesign.swift */; };
 		D9E2445238C3FA094C71DF9B /* my-2025-premium-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = D89037C23573B32EFB30EB2D /* my-2025-premium-overlay.png */; };
 		DA6F602BF706CB53C5D7A739 /* my-car.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AEE2E6736F4B2129F375724 /* my-car.png */; };
@@ -208,6 +209,7 @@
 		D89037C23573B32EFB30EB2D /* my-2025-premium-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2025-premium-overlay.png"; sourceTree = "<group>"; };
 		DB76D5E01B800DF23CCCF7B9 /* my-l-template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-l-template.png"; sourceTree = "<group>"; };
 		DBA79681BD5E3669DA812DA4 /* StudioError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioError.swift; sourceTree = "<group>"; };
+		DE6D9FB13858C2E1FA48D9B9 /* CarAssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAssetTests.swift; sourceTree = "<group>"; };
 		E0DA355A80F74986C99F17A6 /* m3-2024-car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m3-2024-car.png"; sourceTree = "<group>"; };
 		E212026656DACF7DED6F1E14 /* ExportPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPanel.swift; sourceTree = "<group>"; };
 		E242EF1E4B8D660617CEF3BE /* mx-2021-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx-2021-overlay.png"; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 		B5D0DF0D5F04DC2FC16B84F9 /* Export */ = {
 			isa = PBXGroup;
 			children = (
+				DE6D9FB13858C2E1FA48D9B9 /* CarAssetTests.swift */,
 				7059B33E637AF2BD2094BDFB /* PhotoExportTests.swift */,
 				337BB5FDB47E5CA0C85FB38C /* WrapRendererTests.swift */,
 			);
@@ -677,6 +680,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1733E58F9974A38C8D11C2DC /* CanvasGeometryTests.swift in Sources */,
+				D3986CD7A3A2AFF6F9A7A7F1 /* CarAssetTests.swift in Sources */,
 				E88BDFB8087FCB18E592FE19 /* CarTests.swift in Sources */,
 				2E83F2E0A7947043ABFD3EBD /* DesignStoreTests.swift in Sources */,
 				67154731DD00054AD75C09E4 /* EditorSessionTests.swift in Sources */,
